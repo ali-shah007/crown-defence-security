@@ -78,8 +78,10 @@ function Footer() {
   ]
   return (
     <div className=' bg-black'>
- <div className='flex flex-row w-[70vw] h-auto py-20 mx-auto gap-20 text-white text-base font-bold'>
-      <div className='flex flex-col gap-10'>
+    
+ <div className='flex flex-col lg:flex-row w-[70vw] h-auto py-20 mx-auto  text-white text-base font-bold'>
+ <div className='flex w-1/2 gap-20'>
+ <div className='flex flex-col gap-10'>
           <img className='w-[180px] h-auto' src={logo} alt='logo'/>
           <img className='w-[180px] h-auto'  src={footerbanner} alt='banner'/>
       </div>
@@ -97,7 +99,9 @@ function Footer() {
           </ul>
           
       </div>
-      <div>
+</div>
+<div className='flex w-1/2 gap-20'>
+<div className='flex flex-col'>
       <h2 className='whitespace-nowrap'>24/7 Control Room: <span className='text-[#c6af6b]'>0900 786 01</span></h2>
           <h2 className='whitespace-nowrap'>Email: <span className='text-[#c6af6b]'>info@crowndefencesecurity.co.uk</span></h2>
           <h1 className='text-base font-bold text-white mt-3 mb-2 underline'>CDS HeadQuarters</h1>
@@ -117,6 +121,9 @@ function Footer() {
         <h1 className='text-[#c6af6b]'>All Rights Reserved</h1>
 
       </div>
+</div>
+     
+    
     </div>
     </div>
    

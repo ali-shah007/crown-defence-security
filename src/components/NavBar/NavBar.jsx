@@ -16,26 +16,26 @@ function NavBar() {
       id : 2,
       
     },
-    {
-      title: 'Guards',
-      tolink: '/guards',
-      id : 3,
+    // {
+    //   title: 'Guards',
+    //   tolink: '/guards',
+    //   id : 3,
       
-    },
-    {
-      title: 'Mobile Security',
-      tolink: '/mobile-security',
-      id : 4,
+    // },
+    // {
+    //   title: 'Mobile Security',
+    //   tolink: '/mobile-security',
+    //   id : 4,
       
-    },
-    {
-      title: 'Site Detection',
-      tolink: '/site-detection',
-      id : 5,
+    // },
+    // {
+    //   title: 'Site Detection',
+    //   tolink: '/site-detection',
+    //   id : 5,
       
-    },
+    // },
     {
-      title: 'All Services',
+      title: 'Services',
       tolink: '/services',
       id : 6,
       
@@ -65,7 +65,7 @@ function NavBar() {
       
     </div>
     <div className=' w-full h-[90px]  bg-black text-white'>
-    <div className='hidden lg:flex w-[70vw] h-[90px]  bg-black text-white mx-auto px-4 justify-center items-center'>
+    <div className='flex w-full lg:w-[70vw] h-[90px]  bg-black text-white mx-auto px-4 justify-center items-center'>
           <ul className='flex gap-20 text-base capitalize font-bold '>
             {data.map(({id,title,tolink})=>(
               <Link to={tolink} key={id} className='cursor-pointer hover:scale-105 duration-200 hover:text-[#c6af6b]'>{title}</Link>
