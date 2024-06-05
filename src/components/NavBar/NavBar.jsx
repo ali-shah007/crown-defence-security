@@ -65,8 +65,8 @@ function NavBar() {
       
     </div>
     <div className=' w-full h-[90px]  bg-black text-white'>
-    <div className='flex w-full lg:w-[70vw] h-[90px]  bg-black text-white mx-auto px-4 justify-center items-center'>
-          <ul className='flex gap-20 text-base capitalize font-bold '>
+    <div className='flex w-[95vw] lg:w-[70vw] h-[90px]  bg-black text-white mx-auto px-4 justify-center items-center'>
+          <ul className='flex gap-5 lg:gap-20 text-base capitalize font-bold '>
             {data.map(({id,title,tolink})=>(
               <Link to={tolink} key={id} className='cursor-pointer hover:scale-105 duration-200 hover:text-[#c6af6b]'>{title}</Link>
             ))}
