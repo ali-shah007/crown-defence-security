@@ -6,49 +6,49 @@ import footerbanner from '../../assets/smallbanner.jpg'
 
 function Footer() {
     const data=[
-    {
-      title: 'Home',
-      tolink: '/',
-      id : 1,
-      
-    },
-    {
-      title: 'About',
-      tolink: '/about',
-      id : 2,
-      
-    },
-    {
-      title: 'Guards',
-      tolink: '/guards',
-      id : 3,
-      
-    },
-    {
-      title: 'Mobile Security',
-      tolink: '/mobile-security',
-      id : 4,
-      
-    },
-    {
-      title: 'Site Detection',
-      tolink: '/site-detection',
-      id : 5,
-      
-    },
-    {
-      title: 'All Services',
-      tolink: '/services',
-      id : 6,
-      
-    },
-    {
-      title: 'Contact',
-      tolink: '/contact',
-      id : 7,
-      
-    },
-
+      {
+        title: 'Home',
+        tolink: '/',
+        id : 1,
+        
+      },
+      {
+        title: 'About',
+        tolink: '/about',
+        id : 2,
+        
+      },
+      // {
+      //   title: 'Guards',
+      //   tolink: '/guards',
+      //   id : 3,
+        
+      // },
+      // {
+      //   title: 'Mobile Security',
+      //   tolink: '/mobile-security',
+      //   id : 4,
+        
+      // },
+      // {
+      //   title: 'Site Detection',
+      //   tolink: '/site-detection',
+      //   id : 5,
+        
+      // },
+      {
+        title: 'Services',
+        tolink: '/services',
+        id : 6,
+        
+      },
+      {
+        title: 'Contact',
+        tolink: '/contact',
+        id : 7,
+        
+      },
+  
   ]
 
   const data2 = [
