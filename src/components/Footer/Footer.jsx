@@ -79,8 +79,8 @@ function Footer() {
   return (
     <div className=' bg-black'>
     
- <div className='flex flex-col lg:flex-row w-[70vw] h-auto py-20 mx-auto  text-white text-base font-bold'>
- <div className='flex w-1/2 gap-20'>
+ <div className='flex flex-col lg:flex-row w-full lg:w-[70vw] h-auto py-20 mx-auto ml:5 lg:ml:0 text-white text-base font-bold'>
+ <div className='flex flex-col lg:flex-row w-1/2 gap-20'>
  <div className='flex flex-col gap-10'>
           <img className='w-[180px] h-auto' src={logo} alt='logo'/>
           <img className='w-[180px] h-auto'  src={footerbanner} alt='banner'/>
