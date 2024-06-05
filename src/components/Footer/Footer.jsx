@@ -100,7 +100,7 @@ function Footer() {
           
       </div>
 </div>
-<div className='flex w-1/2 gap-20'>
+<div className='flex flex-col lg:flex-row w-1/2 gap-20'>
 <div className='flex flex-col'>
       <h2 className='whitespace-nowrap'>24/7 Control Room: <span className='text-[#c6af6b]'>0900 786 01</span></h2>
           <h2 className='whitespace-nowrap'>Email: <span className='text-[#c6af6b]'>info@crowndefencesecurity.co.uk</span></h2>
