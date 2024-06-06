@@ -2,6 +2,7 @@ import React from 'react'
 import team from '../assets/team.jpg'
 
 
+
 function About() {
   return (
     <div

@@ -3,6 +3,7 @@ import scan from '../../assets/scan.jpg';
 import security from '../../assets/security.jpg';
 import team from '../../assets/team.jpg';
 import { IoIosArrowDropleft, IoIosArrowDropright } from "react-icons/io";
+import { LazyLoadImage } from 'react-lazy-load-image-component';
 
 function Slider() {
     const [currentSlide, setCurrentSlide] = useState(0);
@@ -40,12 +41,13 @@ function Slider() {
                 style={{ transform: `translateX(-${translateXValue}vw)` }}
             >
                 {data.map((image, index) => (
-                    <img
-                        key={index}
-                        className='w-[80vw] h-[70vh] lg:w-[50vw] lg:h-[50vh] object-cover object-center'
-                        src={image}
-                        alt={`slide-${index}`}
-                    />
+                    
+                    <LazyLoadImage
+                    key={index}
+                    className='w-[80vw] h-[70vh] lg:w-[50vw] lg:h-[50vh] object-cover object-center'
+                    alt={`slide-${index}`}
+                    src={image} // use normal <img> attributes as props
+                     />
                 ))}
             </div>
             <div className='flex absolute right-0 left-0 bottom-[100px] mx-auto w-[100px] gap-3'>

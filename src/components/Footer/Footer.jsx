@@ -79,7 +79,7 @@ function Footer() {
   return (
     <div className=' bg-black'>
     
- <div className='flex flex-col lg:flex-row w-[90vw] lg:w-[70vw] h-auto py-20 mx-auto ml:5 lg:ml:0 text-white text-base font-bold'>
+ <div className='flex flex-col lg:flex-row w-[90vw] lg:w-[70vw] h-auto pt-20 pb-10 lg:pb-20 mx-auto ml:5 lg:ml:0 text-white text-base font-bold'>
  <div className='flex flex-col lg:flex-row w-1/2 gap-10 lg:gap-20'>
  <div className='flex flex-col gap-10'>
           <img className='w-[180px] h-auto' src={logo} alt='logo'/>
@@ -114,9 +114,9 @@ function Footer() {
       <div>
         <h1>Company No:</h1>
         <h1 className='text-[#c6af6b]'>1234567</h1>
-        <h1 >VAT Registration No:</h1>
+        <h1 className='mt-10 lg:mt-3'>VAT Registration No:</h1>
         <h1 className='text-[#c6af6b]'>3333333</h1>
-        <h1 className='text-[#c6af6b]'>Copyright © 2019-2024</h1>
+        <h1 className='mt-10 lg:mt-3 text-[#c6af6b]'>Copyright © 2019-2024</h1>
         <h1 className='text-[#c6af6b]'>Crown Defence Security Ltd</h1>
         <h1 className='text-[#c6af6b]'>All Rights Reserved</h1>
 
