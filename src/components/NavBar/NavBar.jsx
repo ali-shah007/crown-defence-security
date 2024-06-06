@@ -55,7 +55,7 @@ function NavBar() {
         </div>
       </div>
       <div
-        className={`flex w-full h-[102px] ${scrollPosition > 0 ? 'bg-black' : 'lg:bg-transparent'} text-white lg:fixed z-10 backdrop-blur-3xl border-b border-white`}
+        className={`flex w-full h-[102px] bg-black ${scrollPosition > 0 ? 'bg-black' : 'lg:bg-transparent'} text-white lg:fixed z-10 backdrop-blur-3xl border-b border-white`}
       >
         <div className='hidden lg:flex justify-end items-center pr-5 w-1/3 border-r border-white'>
           <NavLink to='/'>
@@ -73,7 +73,7 @@ function NavBar() {
                 to={tolink}
                 key={id}
                 className={({ isActive }) =>
-                  `cursor-pointer hover:scale-105 duration-200 lg:hover:text-[#c6af6b] ${
+                  `cursor-pointer hover:scale-105 duration-200 lg:hover:text-[#c6af6b] p-2 rounded lg:hover:bg-white  ${
                     isActive ? 'bg-[#c6af6b] text-white p-2 rounded' : ''
                   }`
                 }
