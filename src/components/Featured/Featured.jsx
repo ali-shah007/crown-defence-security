@@ -9,7 +9,7 @@ function Featured() {
             Featured Services
         </div>
         <div>
-          <div className='flex w-[50vw] h-[50vh]'>
+          <div className='flex w-[80vw] h-[70vh] lg:w-[50vw] lg:h-[50vh]'>
           <Slider/>
           </div>
         </div>
