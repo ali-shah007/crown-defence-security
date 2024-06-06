@@ -8,7 +8,7 @@ function LoadScreen() {
     <div>
         <NavBar/>
 <div className="loading-screen">
-      <div className="logo "><img className='w-[500px] h-auto' src={logo} alt='logo'/></div>
+      <div className="logo "><img className='w-[250px] lg:w-[500px] h-auto' src={logo} alt='logo'/></div>
       <div className="spinner"></div>
       <p>Loading...</p>
       <div className="dots">
