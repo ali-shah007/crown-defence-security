@@ -1,11 +1,12 @@
 import React from 'react'
-import Dummy from '../components/Dummy'
+import team from '../assets/team.jpg'
 
 
 function About() {
   return (
-    <div>
-        <Dummy type='About'/>
+    <div
+       className='w-full h-[100vh] bg-cover bg-center bg-fixed'
+      style={{ backgroundImage: `url(${team})` }}>
     </div>
   )
 }

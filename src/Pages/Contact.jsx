@@ -1,11 +1,12 @@
 import React from 'react'
-import Dummy from '../components/Dummy'
+import contact from '../assets/contact.jpg'
 
 function Contact() {
   return (
-    <div>
-        <Dummy type="Contact"/>
-    </div>
+    <div
+    className='w-full h-[100vh] bg-cover bg-center bg-fixed'
+   style={{ backgroundImage: `url(${contact})` }}>
+ </div>
   )
 }
 
