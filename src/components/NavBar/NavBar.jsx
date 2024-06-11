@@ -67,14 +67,14 @@ function NavBar() {
           </NavLink>
         </div>
         <div className='flex w-[100vw] lg:w-2/3 text-white mx-auto px-4 justify-center items-center'>
-          <ul className='flex gap-10 lg:gap-20 text-base capitalize font-bold'>
+          <ul className='flex gap-6 lg:gap-20 text-base capitalize font-bold'>
             {data.map(({ id, title, tolink }) => (
               <NavLink
                 to={tolink}
                 key={id}
                 className={({ isActive }) =>
-                  `cursor-pointer hover:scale-105 duration-200 lg:hover:text-[#c6af6b] p-2 rounded lg:hover:bg-white  ${
-                    isActive ? 'bg-[#c6af6b] text-white p-2 rounded' : ''
+                  `cursor-pointer hover:scale-105 duration-200 lg:hover:text-black lg:p-2 lg:rounded lg:hover:bg-white  ${
+                    isActive ? 'bg-[#c6af6b] text-white lg:p-2 p-1 rounded' : ''
                   }`
                 }
               >

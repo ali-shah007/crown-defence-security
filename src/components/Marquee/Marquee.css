@@ -1,0 +1,57 @@
+/* Marquee.css */
+.marquee {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    background: #FFD600;
+    padding: 30px 0;
+  }
+  
+  .marquee-content {
+    display: flex;
+    width: fit-content;
+    animation: marquee 20s linear infinite;
+    animation-play-state: running;
+  }
+  
+  .marquee-item {
+    /* padding: 0 15px; */
+    white-space: nowrap;
+    color: #333;
+    text-decoration: none;
+    font-weight: 500;
+  }
+  
+  .marquee-item:hover {
+    color: #007bff;
+  }
+  
+  .marquee-content:hover {
+    animation-play-state: paused;
+    transition-duration: 200ms;
+  }
+  
+  @keyframes marquee {
+    0% {
+      transform: translateX(0%);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
+  }
+  
+  /* Media queries for different screen sizes */
+  @media (max-width: 1023px) {
+    .marquee-content {
+      animation: marquee 10s linear infinite;
+    }
+  }
+  
+
+  
+  @media (min-width: 1024px) {
+    .marquee-content {
+      animation: marquee 20s linear infinite;
+    }
+  }
+  
