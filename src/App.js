@@ -36,7 +36,8 @@ const Layout = () =>{
   return(
     <div className="app">
         <NavBar/>
-        {loading ? <LoadScreen /> : <Outlet />}
+        {/* {loading ? <LoadScreen /> : <Outlet />} */}
+        <Outlet/>
         <Footer/>
     </div>
   )
