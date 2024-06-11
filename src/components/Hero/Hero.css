@@ -1,0 +1,23 @@
+@keyframes slideUp {
+    from {
+      transform: translateY(100%);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+  .animate-slideUp {
+    animation: slideUp 1s ease-in-out;
+  }
+  
+  .opacity-100 {
+    opacity: 1;
+  }
+  
+  .opacity-0 {
+    opacity: 0;
+  }
+  

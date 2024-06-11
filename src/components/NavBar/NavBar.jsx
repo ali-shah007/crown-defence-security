@@ -40,7 +40,7 @@ function NavBar() {
   ];
 
   return (
-    <div className='flex flex-col z-10'>
+    <div className='flex flex-col z-20'>
       <div className={`lg:hidden flex w-full h-[120px] bg-black text-white`}>
         <div className='flex w-[65vw] h-[120px] mx-auto px-4'>
           <div className='flex justify-center items-center w-full'>
