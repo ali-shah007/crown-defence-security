@@ -16,7 +16,7 @@ function Hero() {
       setCurrentImage((prevImage) => (prevImage + 1) % images.length);
     }, 5000);
     return () => clearInterval(interval);
-  }, []);
+  }, [images.length]);
 
   return (
     <div
