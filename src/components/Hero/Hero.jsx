@@ -24,7 +24,7 @@ function Hero() {
       style={{ backgroundImage: `url(${heroimg})` }}
     >
       {/* Background Overlay */}
-      <div className='absolute inset-0 bg-black opacity-50'></div>
+      <div className='absolute inset-0 bg-black opacity-20'></div>
 
       <div className='w-1/2 hidden lg:flex justify-center pt-10 relative'>
         <Forms />
