@@ -15,6 +15,7 @@ import MobileSecurity from "./Pages/MobileSecurity";
 import SiteDetection from "./Pages/SiteDetection";
 import Services from "./Pages/Services";
 import Contact from "./Pages/Contact";
+import Brochurepage from "./Pages/Brochurepage";
 // import LoadScreen from "./Pages/LoadScreen";
 
 
@@ -67,6 +68,10 @@ const router = createBrowserRouter([
       {
         path:"/site-detection",
         element: <SiteDetection/>
+      },
+      {
+        path:"/brochure",
+        element: <Brochurepage/>
       },
       {
         path:"/services",

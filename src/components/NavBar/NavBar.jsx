@@ -32,15 +32,21 @@ function NavBar() {
       tolink: '/about',
       id: 2,
     },
+
+    {
+      title: 'Brochure',
+      tolink: '/brochure',
+      id: 3,
+    },
     {
       title: 'Services',
       tolink: '/services',
-      id: 6,
+      id: 4,
     },
     {
       title: 'Contact',
       tolink: '/contact',
-      id: 7,
+      id: 5,
     },
   ];
 
