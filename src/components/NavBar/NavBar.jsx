@@ -100,7 +100,7 @@ function NavBar() {
         </div>
       </div>
       <div
-        className={`lg:hidden fixed top-0 right-0 h-full w-2/3 bg-black text-white p-4 z-20 transform transition-transform duration-300 ${
+        className={`lg:hidden fixed top-0 right-0 h-full w-1/2 bg-black text-white p-4 z-20 transform transition-transform duration-300 ${
           isOpen ? 'translate-x-0' : 'translate-x-full'
         }`}
       >
