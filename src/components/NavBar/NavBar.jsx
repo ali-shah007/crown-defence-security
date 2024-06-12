@@ -57,7 +57,8 @@ function NavBar() {
           scrollPosition > 0 ? 'bg-black' : 'lg:bg-transparent'
         } text-white fixed z-10 backdrop-blur-3xl border-b border-white`}
       >
-        <div className='flex justify-center lg:justify-end items-center pr-5 w-1/2 lg:w-1/3 lg:border-r lg:border-white'>
+        <div className='absolute inset-0 bg-black opacity-30'></div>
+        <div className='flex justify-center lg:justify-end items-center pr-5 w-1/2 lg:w-1/3 lg:border-r lg:border-white z-20'>
           <NavLink to='/'>
             <img
               className='w-[150px] lg:w-[200px] h-auto hover:scale-105 duration-200 rounded-lg'
@@ -66,7 +67,7 @@ function NavBar() {
             />
           </NavLink>
         </div>
-        <div className='hidden lg:flex w-2/3 text-white mx-auto px-4 justify-center items-center'>
+        <div className='hidden lg:flex w-2/3 text-white mx-auto px-4 justify-center items-center z-20'>
           <ul className='flex gap-6 lg:gap-20 text-base capitalize font-bold'>
             {data.map(({ id, title, tolink }) => (
               <NavLink
@@ -83,7 +84,7 @@ function NavBar() {
             ))}
           </ul>
         </div>
-        <div className='lg:hidden flex w-1/2 justify-end items-center pr-5'>
+        <div className='lg:hidden flex w-1/2 justify-end items-center pr-5 z-20'>
           <button
             className='text-white focus:outline-none'
             onClick={toggleMenu}
@@ -106,7 +107,7 @@ function NavBar() {
         </div>
       </div>
       <div
-        className={`lg:hidden fixed top-0 right-0 h-full w-1/2 bg-black text-white p-4 z-20 transform transition-transform duration-300 ${
+        className={`lg:hidden fixed top-0 right-0 h-full w-1/2 bg-black text-white p-4 z-30 transform transition-transform duration-300 ${
           isOpen ? 'translate-x-0' : 'translate-x-full'
         }`}
       >

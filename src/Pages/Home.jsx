@@ -3,6 +3,7 @@ import Hero from '../components/Hero/Hero'
 import Featured from '../components/Featured/Featured'
 import Marquee from '../components/Marquee/Marquee'
 import CallUs from '../components/CallUs/CallUs'
+import Services from '../components/Services/Services'
 
 
 
@@ -12,6 +13,7 @@ function Home() {
         <Hero />
         <Marquee/>
         <CallUs/>
+        <Services/>
         <Featured/>
         
         

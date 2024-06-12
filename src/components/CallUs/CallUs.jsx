@@ -5,7 +5,7 @@ function CallUs() {
     <div className=' w-full h-auto bg-[#343A40]   text-white'>
         <div className='flex  flex-col justify-center items-center text-center py-20 gap-7 w-[80vw] mx-auto'>
         <div>
-            <h1 className='text-4xl font-bold '>SIA Security Guard Services throughout Manchester and the North West of England</h1>
+            <h1 className='text-4xl font-bold '>Security Guard Services throughout Manchester and the North West of England</h1>
         </div>
         <div>
             <h1 className='text-2xl font-semibold'>Greater Manchester | Nationwide</h1>
