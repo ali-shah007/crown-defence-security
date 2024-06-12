@@ -31,7 +31,7 @@ function Hero() {
       </div>
       
       <div className=' flex lg:hidden w-2/5 flex-col justify-center pb-10 lg:pb-10 md:pt-10 md:pb-0 relative pl-5 gap-3'>
-        <h1 className='text-white text-xl md:text-3xl font-bold mb-4 animate-slideUp'>Hire Now the best Security at affordable price</h1>
+        <h1 className='text-white text-2xl md:text-3xl font-bold mb-4 animate-slideUp'>Hire Now the best Security at affordable price</h1>
         <button
           className='bg-brand-color text-base md:text-xl text-gray-900 font-semibold py-2 px-4 rounded-md hover:bg-opacity-90 transition-all duration-1000 ease-in-out animate-slideUp'
           style={{ animationDuration: '3000ms' }}
