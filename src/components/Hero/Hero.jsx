@@ -20,17 +20,17 @@ function Hero() {
 
   return (
     <div
-      className='w-full h-[40vh] lg:h-[85vh] bg-cover bg-center bg-fixed relative flex items-center justify-between'
+      className='w-full h-[50vh] lg:h-[85vh] bg-cover bg-center bg-fixed relative flex items-center justify-between'
       style={{ backgroundImage: `url(${heroimg})` }}
     >
       {/* Background Overlay */}
-      <div className='absolute inset-0 bg-black opacity-20'></div>
+      <div className='absolute inset-0 bg-black opacity-40'></div>
 
       <div className='w-1/2 hidden lg:flex justify-center pt-10 relative'>
         <Forms />
       </div>
       
-      <div className=' flex lg:hidden w-1/2 flex-col justify-center pt-10 relative z-10 pl-3'>
+      <div className=' flex lg:hidden w-1/2 flex-col justify-center pt-20 relative pl-3'>
         <h1 className='text-white text-3xl font-bold mb-4 animate-slideUp'>Hire Now the best Security at affordable price</h1>
         <button
           className='bg-brand-color text-gray-900 font-semibold py-2 px-4 rounded-md hover:bg-opacity-90 transition-all duration-1000 ease-in-out animate-slideUp'
