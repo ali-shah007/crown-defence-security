@@ -11,7 +11,7 @@ function CallUs() {
             <h1 className='text-2xl font-semibold'>Greater Manchester | Nationwide</h1>
         </div>
         <div>
-            <button className='text-[#333] text-xl font-semibold px-10 py-4 bg-[#FFD600] rounded-full'>Call us on <br/> <span className='text-2xl lg:text-4xl font-bold'>0800 123 3345</span></button>
+            <button className='text-[#333] text-xl font-semibold px-10 py-4 bg-[#FFD600] rounded-full hover:scale-105 duration-200'>Call us on <br/> <span className='text-2xl lg:text-4xl font-bold'>0800 123 3345</span></button>
         </div>
        
         <div>

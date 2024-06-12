@@ -33,7 +33,7 @@ function Hero() {
       <div className=' flex lg:w-1/2 w-2/5 flex-col justify-center pb-10 md:pt-10 md:pb-0 relative pl-5 lg:pl-10 gap-3 lg:gap-8'>
         <h1 className='text-white text-2xl md:text-3xl lg:text-7xl font-bold mb-4 animate-slideUp'>Hire Now the best Security at affordable price</h1>
         <button
-          className='lg:w-1/2 bg-brand-color text-base md:text-xl lg:text-4xl text-gray-900 font-semibold lg:py-4 py-2 px-4 rounded-md hover:bg-opacity-90 transition-all duration-1000 ease-in-out animate-slideUp'
+          className='lg:w-1/2 bg-brand-color text-base md:text-xl lg:text-4xl text-gray-900 font-semibold lg:py-4 py-2 px-4 rounded-md hover:bg-opacity-70 transition-all duration-200 ease-in-out animate-slideUp'
           style={{ animationDuration: '3000ms' }}
         >
           Get Free Quote

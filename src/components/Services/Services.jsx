@@ -10,11 +10,11 @@ import './Services.css'; // Import the custom CSS file
 
 function Services() {
   return (
-    <div className='flex w-full h-auto pb-20 bg-brand-color justify-center items-center'>
-      <div className='flex w-[80vw] -mt-10 bg-white h-full py-20'>
+    <div className='flex w-full h-auto pb-20 bg-gradient-to-b from-brand-color to-gray-200 justify-center items-center'>
+      <div className='flex w-[80vw] -mt-10 bg-white h-full py-20 text-[#2c3e50]'>
         <div className='flex flex-col w-[60vw] mx-auto gap-10'>
-          <div className='text-center text-4xl'>
-            <h1 className=' font-semibold'>Professional Security Services</h1>
+          <div className='text-center text-4xl font-bold '>
+            <h1 >Professional Security Services</h1>
           </div>
           <div>
             <p className='text-base text-center'>
@@ -30,7 +30,7 @@ function Services() {
                   <span className='underline-animation'></span>
                 </h1>
                 <p className='py-2 '>Advanced Wired and Wireless CCTV security systems for homes, commercial buildings, construction sites, plant and machinery.</p>
-                <button className='mt-4 py-2 px-4 bg-brand-color text-white rounded transition-transform transform group-hover:scale-110'>More</button>
+                <button className='mt-4 py-2 px-4 bg-black text-white font-semibold rounded transition-transform transform group-hover:scale-110'>More</button>
               </div>
               <div className='flex flex-col items-center text-center md:w-1/3 group'>
                 <BiSolidTorch className='text-blue-500 text-6xl mb-4 transition-transform transform group-hover:scale-110 cursor-pointer' />
@@ -39,7 +39,7 @@ function Services() {
                   <span className='underline-animation'></span>
                 </h1>
                 <p className='py-2 '>Advanced Wired and Wireless CCTV security systems for homes, commercial buildings, construction sites, plant and machinery.</p>
-                <button className='mt-4 py-2 px-4 bg-brand-color text-white rounded transition-transform transform group-hover:scale-110'>More</button>
+                <button className='mt-4 py-2 px-4 bg-black font-semibold text-white rounded transition-transform transform group-hover:scale-110'>More</button>
               </div>
               <div className='flex flex-col items-center text-center md:w-1/3 group'>
                 <BiSolidCctv className='text-red-500 text-6xl mb-4 transition-transform transform group-hover:scale-110 cursor-pointer' />
@@ -48,7 +48,7 @@ function Services() {
                   <span className='underline-animation'></span>
                 </h1>
                 <p className='py-2 '>Advanced Wired and Wireless CCTV security systems for homes, commercial buildings, construction sites, plant and machinery.</p>
-                <button className='mt-4 py-2 px-4 bg-brand-color text-white rounded transition-transform transform group-hover:scale-110'>More</button>
+                <button className='mt-4 py-2 px-4 bg-black font-semibold text-white rounded transition-transform transform group-hover:scale-110'>More</button>
               </div>
             </div>
             {/* 2nd row */}
@@ -61,7 +61,7 @@ function Services() {
                   <span className='underline-animation'></span>
                 </h1>
                 <p className='py-2 '>Advanced Wired and Wireless CCTV security systems for homes, commercial buildings, construction sites, plant and machinery.</p>
-                <button className='mt-4 py-2 px-4 bg-brand-color text-white rounded transition-transform transform group-hover:scale-110'>More</button>
+                <button className='mt-4 py-2 px-4 bg-black font-semibold text-white rounded transition-transform transform group-hover:scale-110'>More</button>
               </div>
               <div className='flex flex-col items-center text-center md:w-1/3 group'>
                 <FaRoadBarrier className='text-brand-color text-6xl mb-4 transition-transform transform group-hover:scale-110 cursor-pointer' />
@@ -70,7 +70,7 @@ function Services() {
                   <span className='underline-animation'></span>
                 </h1>
                 <p className='py-2 '>Advanced Wired and Wireless CCTV security systems for homes, commercial buildings, construction sites, plant and machinery.</p>
-                <button className='mt-4 py-2 px-4 bg-brand-color text-white rounded transition-transform transform group-hover:scale-110'>More</button>
+                <button className='mt-4 py-2 px-4 bg-black font-semibold text-white rounded transition-transform transform group-hover:scale-110'>More</button>
               </div>
               <div className='flex flex-col items-center text-center md:w-1/3 group'>
                 <SiPrivateinternetaccess className='text-6xl mb-4 transition-transform transform group-hover:scale-110 cursor-pointer' />
@@ -79,7 +79,7 @@ function Services() {
                   <span className='underline-animation'></span>
                 </h1>
                 <p className='py-2 '>Advanced Wired and Wireless CCTV security systems for homes, commercial buildings, construction sites, plant and machinery.</p>
-                <button className='mt-4 py-2 px-4 bg-brand-color text-white rounded transition-transform transform group-hover:scale-110'>More</button>
+                <button className='mt-4 py-2 px-4 bg-black font-semibold text-white rounded transition-transform transform group-hover:scale-110'>More</button>
               </div>
             </div>
           </div>
