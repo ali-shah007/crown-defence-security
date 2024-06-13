@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import logo from '../../assets/logo.jpg'
-import footerbanner from '../../assets/smallbanner.jpg'
+import logo from '../../assets/security-logo.png'
+
 
 
 function Footer() {
@@ -83,7 +83,7 @@ function Footer() {
  <div className='flex flex-col lg:flex-row w-1/2 gap-10 lg:gap-20'>
  <div className='flex flex-col gap-10'>
           <img className='w-[180px] h-auto' src={logo} alt='logo'/>
-          <img className='w-[180px] h-auto'  src={footerbanner} alt='banner'/>
+       
       </div>
       <div className='flex flex-col gap-2'>
           
