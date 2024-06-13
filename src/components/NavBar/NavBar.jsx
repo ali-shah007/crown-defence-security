@@ -115,7 +115,7 @@ function NavBar() {
           </ul>
           <div className='flex items-center z-10 pl-20 hover:scale-105 duration-200 '>
             <a
-              href='mailto:info@example.com'
+              href='mailto:info@crowndefencesecurity.co.uk'
               className='flex items-center text-white no-underline hover:text-brand-color duration-200'
             >
               <IoIosMail className='text-2xl lg:text-4xl' />
@@ -207,11 +207,11 @@ function NavBar() {
               <span>+1234567890</span>
             </a>
             <a
-              href='mailto:info@example.com'
+              href='mailto:info@crowndefencesecurity.co.uk'
               className='flex items-center text-white no-underline hover:text-brand-color duration-200'
             >
               <IoIosMail className='text-xl mr-2' />
-              <span>info@example.com</span>
+              <span>Mail</span>
             </a>
           </div>
         </div>
