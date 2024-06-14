@@ -89,7 +89,7 @@ function NavBar() {
           </div>
           <NavLink to='/'>
             <img
-              className='w-[150px] lg:w-[200px] h-auto hover:scale-105 duration-200 rounded-lg'
+              className='w-[200px] lg:w-[200px] h-auto hover:scale-105 duration-200 rounded-lg'
               src={logo}
               alt='logo'
             />
