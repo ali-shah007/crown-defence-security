@@ -77,9 +77,10 @@ function Footer() {
 "DL4 2QN",
   ]
   return (
-    <div className=' bg-black'>
-    
+    <div className=' bg-[#111825]'>
+     
  <div className='flex flex-col lg:flex-row w-[90vw] lg:w-[70vw] h-auto pt-20 pb-10 lg:pb-20 mx-auto ml:5 lg:ml:0 text-white text-base font-bold'>
+ 
  <div className='flex flex-col lg:flex-row w-1/2 gap-10 lg:gap-20'>
  <div className='flex flex-col gap-10'>
           <img className='w-[180px] h-auto' src={logo} alt='logo'/>

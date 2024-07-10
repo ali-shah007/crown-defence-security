@@ -1,43 +1,91 @@
-import React from 'react';
-import './Testimonials.css';
+import React, { useState, useEffect } from 'react';
+import { useSpring, animated } from '@react-spring/web';
+import client1 from '../../assets/client1.jpg'
+import client2 from '../../assets/client2.jpg'
+import client3 from '../../assets/client3.jpg'
+import 'tailwindcss/tailwind.css';
 
 const testimonials = [
-    {
-        text: "Crown Defence provided exceptional service and their professionalism was top-notch. Highly recommend them!",
-        name: "John Doe",
-        role: "CEO, Keku Ltd",
-        photo: "https://img.freepik.com/free-photo/portrait-successful-man-having-stubble-posing-with-broad-smile-keeping-arms-folded_171337-1267.jpg?w=1380&t=st=1718236465~exp=1718237065~hmac=e792f9b58eca1e42b0297c41dc30fa288400654ef6470df6f767c72d96df7d05" // Replace with actual image URL
-    },
-    {
-        text: "The security solutions offered by Crown Defence were exactly what we needed. Their team is outstanding!",
-        name: "Jane Smith",
-        role: "Manager, Brunkster Ltd",
-        photo: "https://img.freepik.com/free-photo/handsome-bearded-businessman-rubbing-hands-having-deal_176420-18778.jpg?w=1380&t=st=1718236488~exp=1718237088~hmac=e529845abd7c97b3f93d14a4ead21ea6af32fff865c7dd790dd59d070d94fda6" // Replace with actual image URL
-    },
-    
-    // Add more testimonials as needed
+  {
+    name: 'Lara Smith',
+    title: 'CEO, Zoma',
+    quote: 'The security services provided have been exceptional. Their guards are always professional and courteous.',
+    image: client1,
+  },
+  {
+    name: 'Sidharth Anand',
+    title: 'Manager, Brickleys',
+    quote: 'We have been extremely satisfied with the security services. The team is reliable and responsive.',
+    image: client2,
+  },
+  {
+    name: 'Alice Johnson',
+    title: 'Director, Burrack Constructors',
+    quote: 'Excellent security services! Highly recommend for any business looking for professional security solutions.',
+    image: client3,
+  },
 ];
 
 const Testimonials = () => {
-    return (
-        <div className="testimonial-section">
-            <h2>What Our Clients Say</h2>
-            <div className="testimonial-container">
-                {testimonials.map((testimonial, index) => (
-                    <div key={index} className="testimonial-card">
-                        <p className="testimonial-text">"{testimonial.text}"</p>
-                        <div className="client-info">
-                            <img src={testimonial.photo} alt={`${testimonial.name} pic`} className="client-photo" />
-                            <div className="client-details">
-                                <p className="client-name">{testimonial.name}</p>
-                                <p className="client-role">{testimonial.role}</p>
-                            </div>
-                        </div>
-                    </div>
-                ))}
-            </div>
-        </div>
-    );
+  const [index, setIndex] = useState(0);
+  const [direction, setDirection] = useState('next');
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setDirection('next');
+      setIndex((prevIndex) => (prevIndex + 1) % testimonials.length);
+    }, 5000);
+    return () => clearInterval(interval);
+  }, []);
+
+  const handleNext = () => {
+    setDirection('next');
+    setIndex((prevIndex) => (prevIndex + 1) % testimonials.length);
+  };
+
+  const handlePrev = () => {
+    setDirection('prev');
+    setIndex((prevIndex) => (prevIndex - 1 + testimonials.length) % testimonials.length);
+  };
+
+  const slideIn = useSpring({
+    from: {
+      transform: direction === 'next' ? 'translateX(100%)' : 'translateX(-100%)',
+      opacity: 0,
+    },
+    to: {
+      transform: 'translateX(0%)',
+      opacity: 1,
+    },
+  });
+
+  const slideOut = useSpring({
+    from: {
+      transform: 'translateX(0%)',
+      opacity: 1,
+    },
+    to: {
+      transform: direction === 'next' ? 'translateX(-100%)' : 'translateX(100%)',
+      opacity: 0,
+    },
+    config: { duration: 500 },
+  });
+
+  return (
+    <div className="relative w-full h-[400px] max-w-screen-lg mx-auto mt-10 px-4 justify-center items-center py-20">
+        
+      <animated.div style={slideIn} className=" h-[200px] inset-0 flex flex-col items-center justify-center  bg-gray-100 rounded-lg p-6 md:p-8 shadow-lg">
+      <h2 className='lg:text-6xl md:text-4xl text-2xl font-bold text-[#333] max-w-screen-lg mb-4'>What Our Clients say</h2>
+        <img src={testimonials[index].image} alt={testimonials[index].name} className="rounded-full mb-4 w-20 h-20 md:w-24 md:h-24 object-cover object-center" />
+        <h3 className="text-lg md:text-xl font-semibold mb-2">{testimonials[index].name}</h3>
+        <h4 className="text-sm md:text-md text-gray-600 mb-4">{testimonials[index].title}</h4>
+        <p className="text-gray-700 text-sm md:text-base">{testimonials[index].quote}</p>
+      </animated.div>
+      <animated.div style={slideOut} className="absolute inset-0"></animated.div>
+      <button onClick={handlePrev} className="absolute left-0 top-1/2 transform -translate-y-1/2 bg-gray-700 text-white p-2 md:p-3 rounded-full hover:bg-gray-900 focus:outline-none">‹</button>
+      <button onClick={handleNext} className="absolute right-0 top-1/2 transform -translate-y-1/2 bg-gray-700 text-white p-2 md:p-3 rounded-full hover:bg-gray-900 focus:outline-none">›</button>
+    </div>
+  );
 };
 
 export default Testimonials;

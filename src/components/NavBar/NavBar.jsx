@@ -55,11 +55,11 @@ function NavBar() {
   return (
     <div className='flex flex-col z-20'>
       <div
-        className={`flex w-full h-[102px] bg-black justify-between ${
-          scrollPosition > 0 ? 'bg-black' : 'lg:bg-transparent'
+        className={`flex w-full h-[102px] bg-[#111825] justify-between ${
+          scrollPosition > 0 ? 'bg-[#111825]' : 'lg:bg-[#111825]'
         } text-white fixed z-10 backdrop-blur-3xl border-b border-white`}
       >
-        <div className='absolute inset-0 bg-black opacity-30'></div>
+        {/* <div className='absolute inset-0 bg-black opacity-30'></div> */}
         <div className='lg:hidden flex justify-end items-center z-10 pl-5'>
           <a
             href='tel:+1234567890'
@@ -104,7 +104,7 @@ function NavBar() {
                 className={({ isActive }) =>
                   `cursor-pointer hover:scale-105 duration-200 lg:hover:text-black lg:p-2 lg:rounded lg:hover:bg-white ${
                     isActive
-                      ? 'bg-[#c6af6b] text-white lg:p-2 p-1 rounded'
+                      ? ''
                       : ''
                   }`
                 }
@@ -146,7 +146,7 @@ function NavBar() {
         </div>
       </div>
       <div
-        className={`lg:hidden fixed top-0 right-0 h-full w-1/2 bg-black text-white p-4 z-30 transform transition-transform duration-300 ${
+        className={`lg:hidden fixed top-0 right-0 h-full w-1/2 bg-[#111825] text-white p-4 z-30 transform transition-transform duration-300 ${
           isOpen ? 'translate-x-0' : 'translate-x-full'
         }`}
       >

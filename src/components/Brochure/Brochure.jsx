@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import HTMLFlipBook from 'react-pageflip';
 import { FaArrowLeft, FaArrowRight } from 'react-icons/fa';
 import './Brochure.css';
@@ -14,8 +14,31 @@ const Brochure = () => {
     flipBookRef.current.pageFlip().flipPrev();
   };
 
+  // Add a state to track the loaded images
+  const [loadedImages, setLoadedImages] = useState({});
+
+  const handleImageLoad = (index) => {
+    setLoadedImages((prev) => ({
+      ...prev,
+      [index]: true,
+    }));
+  };
+
+  const pages = [
+    "https://www.leisureguardsecurity.co.uk/tower-guard/files/mobile/2.jpg",
+    "https://www.leisureguardsecurity.co.uk/tower-guard/files/mobile/3.jpg",
+    "https://www.leisureguardsecurity.co.uk/tower-guard/files/mobile/4.jpg",
+    "https://www.leisureguardsecurity.co.uk/tower-guard/files/mobile/5.jpg",
+    "https://www.leisureguardsecurity.co.uk/tower-guard/files/mobile/6.jpg",
+    "https://www.leisureguardsecurity.co.uk/tower-guard/files/mobile/7.jpg",
+    "https://www.leisureguardsecurity.co.uk/tower-guard/files/mobile/8.jpg",
+    "https://www.leisureguardsecurity.co.uk/tower-guard/files/mobile/9.jpg",
+    "https://www.leisureguardsecurity.co.uk/tower-guard/files/mobile/10.jpg",
+    "https://www.leisureguardsecurity.co.uk/tower-guard/files/mobile/11.jpg",
+  ];
+
   return (
-    <div className="bg-[#343A40] brochure-container ">
+    <div className="bg-[#343A40] brochure-container">
       <HTMLFlipBook
         width={300}
         height={450}
@@ -25,38 +48,19 @@ const Brochure = () => {
         maxWidth={500}
         maxHeight={750}
         ref={flipBookRef}
-        className="brochure "
+        className="brochure"
       >
-        <div className="page" style={{ WebkitUserDrag: 'element' }}>
-          <img className='w-full h-full object-cover' src="https://www.leisureguardsecurity.co.uk/tower-guard/files/mobile/2.jpg" alt="" />
-        </div>
-        <div className="page" style={{ WebkitUserDrag: 'element' }}>
-          <img className='w-full h-full object-cover' src="https://www.leisureguardsecurity.co.uk/tower-guard/files/mobile/3.jpg" alt="" />
-        </div>
-        <div className="page" style={{ WebkitUserDrag: 'element' }}>
-          <img className='w-full h-full object-cover' src="https://www.leisureguardsecurity.co.uk/tower-guard/files/mobile/4.jpg" alt="" />
-        </div>
-        <div className="page" style={{ WebkitUserDrag: 'element' }}>
-          <img className='w-full h-full object-cover' src="https://www.leisureguardsecurity.co.uk/tower-guard/files/mobile/5.jpg" alt="" />
-        </div>
-        <div className="page" style={{ WebkitUserDrag: 'element' }}>
-          <img className='w-full h-full object-cover' src="https://www.leisureguardsecurity.co.uk/tower-guard/files/mobile/6.jpg" alt="" />
-        </div>
-        <div className="page" style={{ WebkitUserDrag: 'element' }}>
-          <img className='w-full h-full object-cover' src="https://www.leisureguardsecurity.co.uk/tower-guard/files/mobile/7.jpg" alt="" />
-        </div>
-        <div className="page" style={{ WebkitUserDrag: 'element' }}>
-          <img className='w-full h-full object-cover' src="https://www.leisureguardsecurity.co.uk/tower-guard/files/mobile/8.jpg" alt="" />
-        </div>
-        <div className="page" style={{ WebkitUserDrag: 'element' }}>
-          <img className='w-full h-full object-cover' src="https://www.leisureguardsecurity.co.uk/tower-guard/files/mobile/9.jpg" alt="" />
-        </div>
-        <div className="page" style={{ WebkitUserDrag: 'element' }}>
-          <img className='w-full h-full object-cover' src="https://www.leisureguardsecurity.co.uk/tower-guard/files/mobile/10.jpg" alt="" />
-        </div>
-        <div className="page" style={{ WebkitUserDrag: 'element' }}>
-          <img className='w-full h-full object-cover' src="https://www.leisureguardsecurity.co.uk/tower-guard/files/mobile/11.jpg" alt="" />
-        </div>
+        {pages.map((src, index) => (
+          <div className="page" style={{ WebkitUserDrag: 'element' }} key={index}>
+            <img
+              className={`w-full h-full object-cover ${!loadedImages[index] ? 'blur' : ''}`}
+              src={src}
+              alt=""
+              loading="lazy"
+              onLoad={() => handleImageLoad(index)}
+            />
+          </div>
+        ))}
       </HTMLFlipBook>
       <div className="navigation-buttons">
         <button onClick={handlePrevPage} className="prev-button">

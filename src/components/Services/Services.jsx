@@ -10,7 +10,7 @@ import './Services.css'; // Import the custom CSS file
 
 function Services() {
   return (
-    <div className='flex w-full h-auto pb-20 bg-gradient-to-b from-brand-color to-gray-200 justify-center items-center'>
+    <div className='flex w-full h-auto pb-20 bg-[#111825] justify-center items-center'>
       <div className='flex w-[80vw] -mt-10 bg-white h-full py-20 text-[#2c3e50]'>
         <div className='flex flex-col w-[60vw] mx-auto gap-10'>
           <div className='text-center text-4xl font-bold '>

@@ -13,6 +13,7 @@ import Brochurepage from "./Pages/Brochurepage";
 // import LoadScreen from "./Pages/LoadScreen";
 import ScrollToTop from "./components/ScrollToTop";
 
+
 const Layout = () => {
   // const [loading, setLoading] = useState(true);
 
@@ -27,7 +28,7 @@ const Layout = () => {
 
   return (
     <div className="app">
-      <NavBar />
+      <NavBar/>
       <ScrollToTop />
       {/* {loading ? <LoadScreen /> : <Outlet />} */}
       <Outlet />

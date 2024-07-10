@@ -41,3 +41,13 @@
 .prev-button:hover, .next-button:hover {
   background-color: rgba(0, 0, 0, 0.8);
 }
+
+/* Brochure.css */
+.page img {
+  transition: filter 0.5s ease;
+}
+
+.page img.blur {
+  filter: blur(10px);
+}
+

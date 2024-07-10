@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import heroimg from '../../assets/bghero.jpg';
-import Forms from '../Forms/Forms';
 import cam from '../../assets/camera.png';
 import keys from '../../assets/keys.png';
 import vest from '../../assets/vest.png';
@@ -26,14 +25,12 @@ function Hero() {
       {/* Background Overlay */}
       <div className='absolute inset-0 bg-black opacity-40'></div>
 
-      <div className='w-1/2 hidden justify-center  relative'>
-        <Forms />
-      </div>
+     
       
-      <div className=' flex lg:w-1/2 w-2/5 flex-col justify-center pb-10 md:pt-10 md:pb-0 relative pl-5 lg:pl-10 gap-3 lg:gap-8'>
-        <h1 className='text-white text-2xl md:text-3xl lg:text-6xl font-bold mb-4 animate-slideUp'>Hire Now the best Security at affordable price</h1>
+      <div className=' flex lg:w-1/2 w-2/5 flex-col justify-center pb-10 md:pt-10 md:pb-0 relative pl-5 lg:pl-10 gap-3 lg:gap-8 max-w-md'>
+        <h1 className='text-white text-2xl md:text-4xl lg:text-7xl font-bold mb-4 animate-slideUp'>Hire Now the best Security at affordable price</h1>
         <button
-          className='lg:w-1/2 bg-brand-color text-base md:text-xl lg:text-4xl text-gray-900 font-semibold lg:py-4 py-2 px-4 rounded-md hover:bg-opacity-70 transition-all duration-200 ease-in-out animate-slideUp'
+          className='lg:w-1/2 bg-brand-color text-base md:text-xl lg:text-4xl text-gray-900 font-semibold lg:py-4 py-2 lg:px-4 px-2 rounded-md hover:bg-opacity-70 transition-all duration-200 ease-in-out animate-slideUp'
           style={{ animationDuration: '3000ms' }}
         >
           Get Free Quote
@@ -56,6 +53,9 @@ function Hero() {
           />
         ))}
       </div>
+      
+      
+      
     </div>
   );
 }
