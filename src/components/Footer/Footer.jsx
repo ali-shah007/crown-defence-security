@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import logo from '../../assets/security-logo.png'
+import logo2 from '../../assets/logo2.png'
 
 
 
@@ -120,6 +121,11 @@ function Footer() {
         <h1 className='mt-10 lg:mt-3 text-[#c6af6b]'>Copyright © 2019-2024</h1>
         <h1 className='text-[#c6af6b]'>Crown Defence Security Ltd</h1>
         <h1 className='text-[#c6af6b]'>All Rights Reserved</h1>
+
+        <div className='flex flex-col gap-10 mt-10 justify-center items-center'>
+          <img className='w-[100px] h-auto' src={logo2} alt='logo'/>
+       
+      </div>
 
       </div>
 </div>
