@@ -20,10 +20,10 @@ function Forms() {
     };
   return (
     <div>
-        <div className='bg-gray-900 bg-opacity-90 p-8 rounded-md shadow-md max-w-md w-full '>
+        <div className='bg-gray-900 bg-opacity-60 p-8 rounded-md shadow-md max-w-md w-full '>
         <h2 className='text-2xl font-bold mb-4 text-center text-gray-100'>Get Free Quote</h2>
-        <form ref={form} onSubmit={sendEmail} className='space-y-4'>
-          <div className='flex space-x-4'>
+        <form ref={form} onSubmit={sendEmail} className='space-y-4 opacity-80'>
+          <div className='flex space-x-4 '>
             <input
               type='text'
               name='company_name'

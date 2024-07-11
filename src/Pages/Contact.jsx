@@ -1,16 +1,16 @@
 import React from 'react'
-import contact from '../assets/contact.jpg'
+import Contact from '../components/Contact/Contact'
 
 
-function Contact() {
+
+function Contactpage() {
   
 
   return (
-    <div
-    className='w-full h-[100vh] bg-cover bg-center bg-fixed'
-   style={{ backgroundImage: `url(${contact})` }}>
+    <div>
+      <Contact/>
  </div>
   );
 }
 
-export default Contact
+export default Contactpage

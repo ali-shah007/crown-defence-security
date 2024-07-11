@@ -78,7 +78,7 @@ function Footer() {
 "DL4 2QN",
   ]
   return (
-    <div className=' bg-[#111825]'>
+    <div className=' bg-[#111825] border-t border-white'>
      
  <div className='flex flex-col lg:flex-row w-[90vw] lg:w-[70vw] h-auto pt-20 pb-10 lg:pb-20 mx-auto ml:5 lg:ml:0 text-white text-base font-bold'>
  
@@ -122,7 +122,7 @@ function Footer() {
         <h1 className='text-[#c6af6b]'>Crown Defence Security Ltd</h1>
         <h1 className='text-[#c6af6b]'>All Rights Reserved</h1>
 
-        <div className='flex flex-col gap-10 mt-10 justify-center items-center'>
+        <div className='flex flex-col gap-10 mt-10 justify-center items-center lg:justify-start'>
           <img className='w-[100px] h-auto' src={logo2} alt='logo'/>
        
       </div>
