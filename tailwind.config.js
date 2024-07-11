@@ -9,7 +9,8 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        "brand-color": "#c6af6b"
+        "brand-color": "#c6af6b",
+        "primary": "#FFD600"
       },
     },
    
