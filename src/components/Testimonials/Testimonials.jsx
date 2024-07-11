@@ -76,7 +76,7 @@ const Testimonials = () => {
         
       <animated.div style={slideIn} className=" h-[200px] inset-0 flex flex-col items-center justify-center  bg-gray-100 rounded-lg p-6 md:p-8 shadow-lg">
       <h2 className='lg:text-6xl md:text-4xl text-2xl font-bold text-[#333] max-w-screen-lg mb-4'>What Our Clients say</h2>
-        <img src={testimonials[index].image} alt={testimonials[index].name} className="rounded-full mb-4 w-20 h-20 md:w-24 md:h-24 object-cover object-center" />
+        {/* <img src={testimonials[index].image} alt={testimonials[index].name} className="rounded-full mb-4 w-20 h-20 md:w-24 md:h-24 object-cover object-center" /> */}
         <h3 className="text-lg md:text-xl font-semibold mb-2">{testimonials[index].name}</h3>
         <h4 className="text-sm md:text-md text-gray-600 mb-4">{testimonials[index].title}</h4>
         <p className="text-gray-700 text-sm md:text-base">{testimonials[index].quote}</p>

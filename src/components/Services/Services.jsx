@@ -19,36 +19,36 @@ function Services() {
           </div>
           <div>
             <p className='text-base text-center'>
-              Many people feel they cannot afford to employ a security services company to protect their investment as they feel that security is a non-productive area, however, in the society we now find ourselves living in, unfortunately it must be viewed as a necessity. In this time of ever increasing crime it makes sound financial sense to make the right decisions regarding your site security needs now.
+            In today’s society, security is no longer a luxury but a necessity. Many people hesitate to hire a security services company, viewing it as an unproductive expense. However, with crime rates on the rise, investing in the right security measures is a smart financial decision that protects your valuable assets and ensures peace of mind.
             </p>
           </div>
           <div className='flex flex-col gap-20 pb-20'>
             <div className='flex md:flex-row flex-col  justify-between py-10 gap-14 md:gap-0'>
               <div className='flex flex-col items-center text-center md:w-1/3 group'>
-                <FaEye className=' text-6xl mb-4 transition-transform transform group-hover:scale-110 cursor-pointer' />
+                <FaEye className=' text-6xl text-gray-900 mb-4 transition-transform transform group-hover:scale-110 cursor-pointer' />
                 <h1 className='relative font-bold pb-3 cursor-pointer'>
                   CCTV Systems and Monitoring
                   <span className='underline-animation'></span>
                 </h1>
-                <p className='py-2 '>Advanced Wired and Wireless CCTV security systems for homes, commercial buildings, construction sites, plant and machinery.</p>
+                <p className='py-2 '>For Homes, Commercial Buildings, Construction Sites, and Plant and Machinery, we provide comprehensive surveillance solutions that ensure peace of mind.</p>
                 <button className='mt-4 py-2 px-4 bg-black text-white font-semibold rounded transition-transform transform group-hover:scale-110'>More</button>
               </div>
               <div className='flex flex-col items-center text-center md:w-1/3 group'>
-                <BiSolidTorch className='text-blue-500 text-6xl mb-4 transition-transform transform group-hover:scale-110 cursor-pointer' />
+                <BiSolidTorch className=' text-gray-900  text-6xl mb-4 transition-transform transform group-hover:scale-110 cursor-pointer' />
                 <h1 className='relative font-bold pb-3 cursor-pointer'>
-                  CCTV Systems and Monitoring
+                  Manned Guarding
                   <span className='underline-animation'></span>
                 </h1>
-                <p className='py-2 '>Advanced Wired and Wireless CCTV security systems for homes, commercial buildings, construction sites, plant and machinery.</p>
+                <p className='py-2 '>Our professional security guards offer round-the-clock patrols for building sites, company premises, or parking areas, delivering reliable protection day and night.</p>
                 <button className='mt-4 py-2 px-4 bg-black font-semibold text-white rounded transition-transform transform group-hover:scale-110'>More</button>
               </div>
               <div className='flex flex-col items-center text-center md:w-1/3 group'>
-                <BiSolidCctv className='text-red-500 text-6xl mb-4 transition-transform transform group-hover:scale-110 cursor-pointer' />
+                <BiSolidCctv className=' text-gray-900  text-6xl mb-4 transition-transform transform group-hover:scale-110 cursor-pointer' />
                 <h1 className='relative font-bold pb-3 cursor-pointer'>
-                  CCTV Systems and Monitoring
+                  Videofied
                   <span className='underline-animation'></span>
                 </h1>
-                <p className='py-2 '>Advanced Wired and Wireless CCTV security systems for homes, commercial buildings, construction sites, plant and machinery.</p>
+                <p className='py-2 '>Our innovative Videofied system detects intrusions, records incidents in real-time, and promptly alerts our UK-based monitoring station for immediate response to potential threats.</p>
                 <button className='mt-4 py-2 px-4 bg-black font-semibold text-white rounded transition-transform transform group-hover:scale-110'>More</button>
               </div>
             </div>
@@ -56,30 +56,30 @@ function Services() {
             <div className='flex md:flex-row flex-col justify-between gap-14 md:gap-0'>
             <div className='flex flex-col items-center text-center md:w-1/3 group md:-mt-7 -mt-12 '>
                 {/* <IoIosKey className='text-6xl mb-4 transition-transform transform group-hover:scale-110 cursor-pointer' /> */}
-                <img src={cctv} alt="cctv"  className=' w-[100px] h-auto mb-1 transition-transform transform group-hover:scale-110 cursor-pointer'/>
+                <img src={cctv} alt="cctv"  className=' w-[80px] h-auto mb-1 transition-transform transform group-hover:scale-110 cursor-pointer'/>
                 <h1 className='relative font-bold pb-3 cursor-pointer'>
-                  CCTV Systems and Monitoring
+                  Keyholding & Alarm Response
                   <span className='underline-animation'></span>
                 </h1>
-                <p className='py-2 '>Advanced Wired and Wireless CCTV security systems for homes, commercial buildings, construction sites, plant and machinery.</p>
+                <p className='py-2 '>We act as your primary keyholder, responding swiftly to alarm activations to secure your premises efficiently and effectively.</p>
                 <button className='mt-4 py-2 px-4 bg-black font-semibold text-white rounded transition-transform transform group-hover:scale-110'>More</button>
               </div>
               <div className='flex flex-col items-center text-center md:w-1/3 group'>
-                <FaRoadBarrier className='text-brand-color text-6xl mb-4 transition-transform transform group-hover:scale-110 cursor-pointer' />
+                <FaRoadBarrier className=' text-gray-900  text-6xl mb-4 transition-transform transform group-hover:scale-110 cursor-pointer' />
                 <h1 className='relative font-bold pb-3 cursor-pointer'>
-                  CCTV Systems and Monitoring
+                  Fencing & Barriers
                   <span className='underline-animation'></span>
                 </h1>
-                <p className='py-2 '>Advanced Wired and Wireless CCTV security systems for homes, commercial buildings, construction sites, plant and machinery.</p>
+                <p className='py-2 '>Visual fencing and barrier systems provide a secure perimeter against intruders, enhancing safety and providing reassurance for you and your property.</p>
                 <button className='mt-4 py-2 px-4 bg-black font-semibold text-white rounded transition-transform transform group-hover:scale-110'>More</button>
               </div>
               <div className='flex flex-col items-center text-center md:w-1/3 group'>
-                <SiPrivateinternetaccess className='text-6xl mb-4 transition-transform transform group-hover:scale-110 cursor-pointer' />
+                <SiPrivateinternetaccess className=' text-gray-900 text-6xl mb-4 transition-transform transform group-hover:scale-110 cursor-pointer' />
                 <h1 className='relative font-bold pb-3 cursor-pointer'>
-                  CCTV Systems and Monitoring
+                  Private Investigations
                   <span className='underline-animation'></span>
                 </h1>
-                <p className='py-2 '>Advanced Wired and Wireless CCTV security systems for homes, commercial buildings, construction sites, plant and machinery.</p>
+                <p className='py-2 '>Our discreet surveillance operations ensure complete confidentiality and are tailored to meet the specific requirements of our clients.</p>
                 <button className='mt-4 py-2 px-4 bg-black font-semibold text-white rounded transition-transform transform group-hover:scale-110'>More</button>
               </div>
             </div>
