@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import second from '../../assets/bghero.png'
+import second from '../../assets/bghero.webp'
 
 function PageTopComponent({type}) {
   return (

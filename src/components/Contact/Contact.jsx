@@ -22,7 +22,7 @@ function Contact() {
       <div className="absolute inset-0 bg-gray-900"></div>
       <div className="relative flex flex-col items-center text-white p-8 mt-10">
         <div className="contact-info text-center mb-8">
-          <h2 className="text-2xl md:text-3xl font-semibold mb-2">Crown Defence Security Ltd.</h2>
+          <h2 className="text-3xl md:text-4xl font-semibold mb-2  text-brand-color">Crown Defence Security Ltd.</h2>
           <p>Email: <a href="mailto:info@crowndefencesecurity.co.uk" className="text-yellow-600 hover:text-yellow-500">info@crowndefencesecurity.co.uk</a></p>
           <p>Phone: <a href="tel:+441234567890" className="text-yellow-600 hover:text-yellow-500">+44 1234 567890</a></p>
           <p>Address: 123 Security St, London, UK</p>

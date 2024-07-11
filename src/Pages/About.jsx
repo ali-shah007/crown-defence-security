@@ -9,11 +9,11 @@ function About() {
         <PageTopComponent type='About'/>
       </div>
       <div className="relative max-w-4xl text-center p-8 text-white mt-10">
-        <h2 className="text-3xl md:text-4xl font-bold mb-6">Welcome to Crown Defence Security Ltd</h2>
+        <h2 className="text-3xl md:text-4xl font-bold mb-6 text-brand-color">Welcome to Crown Defence Security Ltd</h2>
         <p className="text-lg md:text-xl leading-relaxed mb-6">
           Your premier security guarding company based in the UK. With years of experience in the security industry, we are dedicated to providing top-notch security services to ensure the safety and protection of our clients. Our team of highly trained and professional security personnel is committed to delivering exceptional service, tailored to meet your specific needs.
         </p>
-        <h2 className="text-2xl md:text-3xl font-bold mb-6">Our Values</h2>
+        <h2 className="text-2xl md:text-3xl font-bold mb-6  text-brand-color">Our Values</h2>
         <p className="text-lg md:text-xl leading-relaxed mb-6">
           - Integrity, honesty, and transparency guide every aspect of our operations.
         </p>
@@ -26,7 +26,7 @@ function About() {
         <p className="text-lg md:text-xl leading-relaxed mb-6">
           - Our workforce is skilled, qualified, and committed to excellence.
         </p>
-        <h2 className="text-2xl md:text-3xl font-bold mb-6">Our Objectives</h2>
+        <h2 className="text-2xl md:text-3xl font-bold mb-6  text-brand-color">Our Objectives</h2>
         <p className="text-lg md:text-xl leading-relaxed mb-6">
           - Continuously monitoring, reviewing, and enhancing our processes to ensure ongoing improvement.
         </p>
