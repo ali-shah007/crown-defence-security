@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import logo from '../../assets/security-logo.png';
+import logo from '../../assets/security-logo.webp';
 import { NavLink } from 'react-router-dom';
 import { FaPhoneAlt } from 'react-icons/fa';
 import { IoIosMail } from 'react-icons/io';
@@ -35,11 +35,11 @@ function NavBar() {
       id: 2,
     },
 
-    {
-      title: 'Brochure',
-      tolink: '/brochure',
-      id: 3,
-    },
+    // {
+    //   title: 'Brochure',
+    //   tolink: '/brochure',
+    //   id: 3,
+    // },
     {
       title: 'Services',
       tolink: '/services',
