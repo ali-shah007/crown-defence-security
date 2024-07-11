@@ -8,7 +8,7 @@ function Contactpage() {
   
 
   return (
-    <div className='mt-10'>
+    <div>
       <PageTopComponent type='Contact'/>
       <Contact/>
       

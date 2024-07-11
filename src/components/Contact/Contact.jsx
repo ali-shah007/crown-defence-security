@@ -1,20 +1,57 @@
-import React from 'react';
-import emailjs from 'emailjs-com';
+import React, { useRef, useState } from 'react';
+import emailjs, { send } from 'emailjs-com';
 import './Contact.css';
 
 function Contact() {
-  const handleSubmit = (e) => {
-    e.preventDefault();
+  const form = useRef();
+  const [popupMessage, setPopupMessage] = useState('');
+  const [showPopup, setShowPopup] = useState(false);
+  const [error, setError] = useState('');
 
-    emailjs.sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', e.target, 'YOUR_USER_ID')
-      .then((result) => {
-        console.log(result.text);
-        alert('Message sent successfully!');
-        e.target.reset();
-      }, (error) => {
-        console.log(error.text);
-        alert('An error occurred, please try again later.');
-      });
+  const sendEmail = (e) => {
+      e.preventDefault();
+  
+      const name = form.current['name'].value.trim();
+      const email = form.current['email'].value.trim();
+      
+
+      // Form validation
+      if (!name) {
+          setError('Name is required');
+          return;
+      }
+      if (!email) {
+          setError('Email is required');
+          return;
+      }
+      if (!/\S+@\S+\.\S+/.test(email)) {
+          setError('Invalid email format');
+          return;
+      }
+
+      setPopupMessage('Sending message...');
+      setShowPopup(true);
+      setError('');
+
+      emailjs
+        .sendForm('service_1nktqrk', 'template_mld9jcf', form.current, 'FdSRX__UgVs90SMPn')
+        .then(
+          () => {
+            setPopupMessage('Message sent ✅');
+            setTimeout(() => {
+              setShowPopup(false);
+              setPopupMessage(''); // Reset popup message
+            }, 5000);
+          },
+          (error) => {
+            console.log('FAILED...', error.text);
+            setPopupMessage('Failed to send message');
+            setTimeout(() => {
+              setShowPopup(false);
+              setPopupMessage(''); // Reset popup message
+            }, 5000);
+          },
+        );
   };
 
   return (
@@ -28,12 +65,12 @@ function Contact() {
           <p>Address: 123 Security St, London, UK</p>
         </div>
 
-        <form className="contact-form bg-gray-800 p-8 rounded-lg w-full max-w-lg" onSubmit={handleSubmit}>
+        <form className="contact-form bg-gray-800 p-8 rounded-lg w-full max-w-lg" onSubmit={sendEmail}>
           <label htmlFor="name" className="block text-yellow-600 font-bold mb-2">Name</label>
-          <input type="text" id="name" name="name" required className="w-full p-2 mb-4 border border-yellow-600 rounded bg-gray-900 text-white focus:outline-none focus:border-yellow-500" />
+          <input type="text" id="from_name" name="from_name" required className="w-full p-2 mb-4 border border-yellow-600 rounded bg-gray-900 text-white focus:outline-none focus:border-yellow-500" />
 
           <label htmlFor="email" className="block text-yellow-600 font-bold mb-2">Email</label>
-          <input type="email" id="email" name="email" required className="w-full p-2 mb-4 border border-yellow-600 rounded bg-gray-900 text-white focus:outline-none focus:border-yellow-500" />
+          <input type="email" id="from_email" name="from_email" required className="w-full p-2 mb-4 border border-yellow-600 rounded bg-gray-900 text-white focus:outline-none focus:border-yellow-500" />
 
           <label htmlFor="message" className="block text-yellow-600 font-bold mb-2">Message</label>
           <textarea id="message" name="message" rows="4" required className="w-full p-2 mb-4 border border-yellow-600 rounded bg-gray-900 text-white focus:outline-none focus:border-yellow-500"></textarea>

@@ -10,8 +10,8 @@ function CallUs() {
         <div>
             <h1 className='text-2xl font-semibold'>Greater Manchester | Nationwide</h1>
         </div>
-        <a href='tel:+1234567890'>
-            <button className='text-[#333] text-xl font-semibold px-10 py-4 bg-[#FFD600] rounded-full hover:scale-105 duration-200'>Call us on <br/> <span className='text-2xl lg:text-4xl font-bold'>0800 123 3345</span></button>
+        <a href='tel:07460395006'>
+            <button className='text-[#333] text-xl font-semibold px-10 py-4 bg-[#FFD600] rounded-full hover:scale-105 duration-200'>Call us on <br/> <span className='text-2xl lg:text-4xl font-bold'>0746 039 5006</span></button>
         </a>
        
         <div>

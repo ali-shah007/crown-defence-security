@@ -71,11 +71,10 @@ function Footer() {
   ]
 
   const data3 = [
-    "Unit 20,",
-"South West Durham Business Park",
-"Shildon",
-"County Durham",
-"DL4 2QN",
+    "277 throne road Doncaster,",
+
+
+"DN2 5AR",
   ]
   return (
     <div className=' bg-[#111825] border-t border-white'>
@@ -104,7 +103,7 @@ function Footer() {
 </div>
 <div className='flex flex-col lg:flex-row w-1/2 gap-10 lg:gap-20'>
 <div className='flex flex-col'>
-      <h1  className='whitespace-nowrap'>24/7 Control Room: <a href='tel:+90078601' className='text-yellow-600 hover:text-yellow-500'>0900 786 01</a></h1>
+      <h1  className='whitespace-nowrap'>24/7 Control Room: <a href='tel:+07460395006' className='text-yellow-600 hover:text-yellow-500'>0746 0395 006</a></h1>
           <a href='mailto:info@crowndefencesecurity.co.uk' className='whitespace-nowrap'>Email: <span className='text-yellow-600 hover:text-yellow-500'>info@crowndefencesecurity.co.uk</span></a>
           <h1 className='text-base font-bold text-white mt-10 lg:mt-3 mb-2 underline'>CDS HeadQuarters</h1>
           <ul className='list-none'>

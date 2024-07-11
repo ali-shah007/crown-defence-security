@@ -3,11 +3,12 @@ import React from 'react';
 import './Marquee.css';
 
 const services = [
-  { name: 'Construction Sites Security', link: '/web-development' },
-  { name: 'Key Holding', link: '/mobile-apps' },
-  { name: 'Dog Guarding', link: '/ui-ux-design' },
-  { name: 'Private Security', link: '/seo-services' },
-  { name: 'House Security', link: '/cloud-solutions' },
+  { name: 'Construction Sites Security', link: '/construction-sites-security' },
+  { name: 'Key Holding', link: '/key-holding' },
+  { name: 'Dog Guarding', link: '/dog-guarding' },
+  { name: 'Private Security', link: '/private-security' },
+  { name: 'House Security', link: '/house-security' },
+  { name: 'Fire Marshal', link: '/fire-marshal' },
 ];
 
 const Marquee = () => {

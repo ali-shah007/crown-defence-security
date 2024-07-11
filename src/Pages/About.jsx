@@ -3,7 +3,7 @@ import PageTopComponent from '../components/PageTopComponent/PageTopComponent';
 
 function About() {
   return (
-    <div className="relative min-h-screen flex flex-col items-center justify-start mt-10 pb-10">
+    <div className="relative min-h-screen flex flex-col items-center justify-start pb-10">
       <div className="absolute inset-0 bg-gray-900 "></div>
       <div className="relative w-full">
         <PageTopComponent type='About'/>

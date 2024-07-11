@@ -20,7 +20,7 @@ function Hero() {
 
   return (
     <div
-      className='w-full h-[400px] md:h-[600px] lg:h-[85vh] bg-cover bg-center bg-fixed relative flex items-end md:items-center justify-between'
+      className='w-full h-[500px] md:h-[600px] lg:h-[85vh] bg-cover bg-center bg-fixed relative flex items-end md:items-center justify-between'
       style={{ backgroundImage: `url(${heroimg})` }}
     >
       {/* Background Overlay */}

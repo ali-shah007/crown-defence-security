@@ -34,12 +34,6 @@ function NavBar() {
       tolink: '/about',
       id: 2,
     },
-
-    // {
-    //   title: 'Brochure',
-    //   tolink: '/brochure',
-    //   id: 3,
-    // },
     {
       title: 'Services',
       tolink: '/services',
@@ -53,16 +47,30 @@ function NavBar() {
   ];
 
   return (
-    <div className='flex flex-col z-20'>
+    <div className='flex flex-col z-20 w-full fixed'>
+      <div className='flex w-full h-[30px] bg-gray-500 justify-center  items-center px-4 '>
+        <a href='tel:07460395006' className='text-white items-center  text-center hidden lg:flex'>
+         
+          Call us for more info!<FaPhoneAlt className='mx-2' /> <span className='mr-2'>Head Office:</span><span className='mr-2'>07460 395 006</span>|
+        </a>
+        <a href='tel:07940517978' className='text-white flex items-center  text-center mx-2'>
+             
+           <FaPhoneAlt className='mx-2' /> <span className='mr-2'>24/7 Helpline:</span> 07940 517 978
+        </a>
+        <a href='mailto:info@crowndefencesecurity.co.uk' className='text-white items-center hidden md:flex'>
+          |
+          <IoIosMail className='mx-2' />
+          info@crowndefencesecurity.co.uk
+        </a>
+      </div>
       <div
         className={`flex w-full h-[102px] bg-[#111825] justify-between ${
           scrollPosition > 0 ? 'bg-[#111825]' : 'lg:bg-[#111825]'
-        } text-white fixed z-10 backdrop-blur-3xl border-b border-white`}
+        } text-white z-10 backdrop-blur-3xl border-y border-white`}
       >
-        {/* <div className='absolute inset-0 bg-black opacity-30'></div> */}
         <div className='lg:hidden flex justify-end items-center z-10 pl-5'>
           <a
-            href='tel:+1234567890'
+            href='tel:07460395006'
             style={{
               color: 'inherit',
               textDecoration: 'none',
@@ -76,7 +84,7 @@ function NavBar() {
         <div className='flex justify-center lg:justify-end items-center pr-5 lg:w-1/3 lg:border-r lg:border-white z-20'>
           <div className='hidden lg:flex justify-start items-center z-10 pr-5 hover:scale-105 duration-200 hover:text-brand-color'>
             <a
-              href='tel:+1234567890'
+              href='tel:07460395006'
               style={{
                 color: 'inherit',
                 textDecoration: 'none',
@@ -95,7 +103,7 @@ function NavBar() {
             />
           </NavLink>
         </div>
-        <div className='hidden lg:flex  text-white mx-auto px-4 justify-center items-center z-20'>
+        <div className='hidden lg:flex text-white mx-auto px-4 justify-center items-center z-20'>
           <ul className='flex lg:gap-10 text-base capitalize font-bold'>
             {data.map(({ id, title, tolink }) => (
               <NavLink
@@ -103,9 +111,7 @@ function NavBar() {
                 key={id}
                 className={({ isActive }) =>
                   `cursor-pointer hover:scale-105 duration-200 lg:hover:text-black lg:p-2 lg:rounded lg:hover:bg-white ${
-                    isActive
-                      ? ''
-                      : ''
+                    isActive ? ' text-white p-1 rounded' : ''
                   }`
                 }
               >
@@ -185,39 +191,27 @@ function NavBar() {
             </NavLink>
           ))}
         </ul>
-
-        {/* <div className='flex items-center mt-6'>
-          <a
-            href='mailto:info@example.com'
-            className='flex items-center text-white no-underline hover:text-brand-color duration-200'
-          >
-            <IoIosMail className='text-2xl' />
-            <span className='ml-2'>Email Us</span>
-          </a>
-        </div> */}
         <div className='mt-5'>
-        <div className='mt-auto pt-6 border-t border-gray-600'>
-          <h3 className='text-xl font-bold mb-4'>Get in Touch</h3>
-          <div className='flex flex-col gap-4'>
-            <a
-              href='tel:+1234567890'
-              className='flex items-center text-white no-underline hover:text-brand-color duration-200'
-            >
-              <FaPhoneAlt className='text-xl mr-2' />
-              <span>+1234567890</span>
-            </a>
-            <a
-              href='mailto:info@crowndefencesecurity.co.uk'
-              className='flex items-center text-white no-underline hover:text-brand-color duration-200'
-            >
-              <IoIosMail className='text-xl mr-2' />
-              <span>Mail</span>
-            </a>
+          <div className='mt-auto pt-6 border-t border-gray-600'>
+            <h3 className='text-xl font-bold mb-4'>Get in Touch</h3>
+            <div className='flex flex-col gap-4'>
+              <a
+                href='tel:07460395006'
+                className='flex items-center text-white no-underline hover:text-brand-color duration-200'
+              >
+                <FaPhoneAlt className='text-xl mr-2' />
+                <span>07460 395 006</span>
+              </a>
+              <a
+                href='mailto:info@crowndefencesecurity.co.uk'
+                className='flex items-center text-white no-underline hover:text-brand-color duration-200'
+              >
+                <IoIosMail className='text-xl mr-2' />
+                <span>Mail</span>
+              </a>
+            </div>
           </div>
         </div>
-        </div>
-
-        
       </div>
     </div>
   );
