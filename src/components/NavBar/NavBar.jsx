@@ -95,13 +95,17 @@ function NavBar() {
               <FaPhoneAlt className='text-2xl lg:text-4xl' />
             </a>
           </div>
+          <div className='flex flex-col'>
           <NavLink to='/'>
             <img
               className='w-[200px] lg:w-[200px] h-auto rounded-lg'
               src={logo}
               alt='logo'
             />
+            
           </NavLink>
+          <h1 className='text-center font-semibold text-gray-200'>Success built by Service</h1>
+          </div>
         </div>
         <div className='hidden lg:flex text-white mx-auto px-4 justify-center items-center z-20'>
           <ul className='flex lg:gap-10 text-base capitalize font-bold'>
