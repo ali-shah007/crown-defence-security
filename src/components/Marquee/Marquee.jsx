@@ -13,7 +13,7 @@ const services = [
 
 const Marquee = () => {
   return (
-    <div className="marquee">
+    <div className="marquee bg-primary">
       <div className="marquee-content">
         {services.map((service, index) => (
           <a key={index} href={service.link} className="marquee-item lg:px-32 px-6 lg:text-3xl text-xl">
