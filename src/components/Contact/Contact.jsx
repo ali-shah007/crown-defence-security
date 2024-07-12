@@ -123,7 +123,7 @@ function Contact() {
           <textarea
             id="message"
             name="message"
-            rows="4"
+            rows="6"
             required
             className="w-full p-2 mb-4 border border-yellow-600 rounded bg-gray-900 text-white focus:outline-none focus:border-yellow-500"
           ></textarea>

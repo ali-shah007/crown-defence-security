@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import logo from '../../assets/security-logo.webp';
+import logo from '../../assets/quote_logo.webp';
 import { NavLink } from 'react-router-dom';
 import { FaPhoneAlt } from 'react-icons/fa';
 import { IoIosMail } from 'react-icons/io';
@@ -95,17 +95,16 @@ function NavBar() {
               <FaPhoneAlt className='text-2xl lg:text-4xl' />
             </a>
           </div>
-          <div className='flex flex-col'>
+          
           <NavLink to='/'>
             <img
-              className='w-[200px] lg:w-[200px] h-auto rounded-lg'
+              className='w-[200px] lg:w-[200px] h-[160px]  rounded-lg'
               src={logo}
               alt='logo'
             />
             
           </NavLink>
-          <h1 className='text-center font-semibold text-gray-200'>Success built by Service</h1>
-          </div>
+          
         </div>
         <div className='hidden lg:flex text-white mx-auto px-4 justify-center items-center z-20'>
           <ul className='flex lg:gap-10 text-base capitalize font-bold'>
@@ -115,7 +114,7 @@ function NavBar() {
                 key={id}
                 className={({ isActive }) =>
                   `cursor-pointer hover:scale-105 duration-200 lg:hover:text-black lg:p-2 lg:rounded lg:hover:bg-white ${
-                    isActive ? ' text-white p-1 rounded' : ''
+                    isActive ?  ' text-gray-900 bg-white p-1 rounded' : 'text-white'
                   }`
                 }
               >
