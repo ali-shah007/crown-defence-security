@@ -121,7 +121,7 @@ function Footer() {
         <h1 className='text-[#c6af6b]'>Crown Defence Security Ltd</h1>
         <h1 className='text-[#c6af6b]'>All Rights Reserved</h1>
 
-        <div className='flex flex-col gap-10 mt-10 justify-center items-center lg:justify-start'>
+        <div className='flex flex-col gap-10 mt-10 '>
           <img className='w-[100px] h-auto' src={logo2} alt='logo'/>
        
       </div>
