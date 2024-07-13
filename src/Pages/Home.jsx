@@ -4,7 +4,7 @@ import Hero from '../components/Hero/Hero'
 import Marquee from '../components/Marquee/Marquee'
 import CallUs from '../components/CallUs/CallUs'
 // import Services from '../components/Services/Services'
-import Testimonials from '../components/Testimonials/Testimonials'
+// import Testimonials from '../components/Testimonials/Testimonials'
 import GetQuoteSection from '../components/GetQuoteSection/GetQuoteSection'
 import Services2 from '../components/Services2/Services2'
 
@@ -18,7 +18,7 @@ function Home() {
         <Marquee/>
         <CallUs/>
         <Services2/>
-        <Testimonials/>
+        {/* <Testimonials/> */}
         <GetQuoteSection/>
        
         

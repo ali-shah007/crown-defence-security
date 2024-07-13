@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@formspree/react": "^2.5.1",
     "@react-spring/web": "^9.7.3",
     "@relume_io/relume-tailwind": "^0.2.0",
     "@relume_io/relume-ui": "^0.2.2",
@@ -12,6 +13,7 @@
     "classnames": "^2.5.1",
     "emailjs-com": "^3.2.0",
     "framer-motion": "^11.2.12",
+    "gapi-script": "^1.2.0",
     "gsap": "^3.12.5",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
@@ -23,13 +25,15 @@
     "react-scripts": "5.0.1",
     "react-scroll": "^1.9.0",
     "react-spinners": "^0.13.8",
+    "sitemap": "^8.0.0",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "generate-sitemap": "node generate-sitemap.js"
   },
   "eslintConfig": {
     "extends": [

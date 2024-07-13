@@ -44,6 +44,11 @@ function NavBar() {
       tolink: '/contact',
       id: 5,
     },
+    {
+      title: 'Join Us',
+      tolink: '/join-our-team',
+      id: 6,
+    },
   ];
 
   return (

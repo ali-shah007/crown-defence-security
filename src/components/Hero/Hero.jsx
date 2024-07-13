@@ -5,14 +5,14 @@ import cam from '../../assets/camera.webp';
 import vest from '../../assets/vest.webp';
 import dog from '../../assets/1 mb.webp'
 // import hj from '../../assets/hj.png'
-import torch from '../../assets/torchman.webp'
-import dog2 from '../../assets/dog2.webp'
+// import torch from '../../assets/torchman.webp'
+// import dog2 from '../../assets/dog2.webp'
 import classNames from 'classnames';
 import './Hero.css';
 import { Link } from 'react-scroll';
 
 function Hero() {
-  const images = [dog, cam, vest, torch, dog2];
+  const images = [dog, cam, vest];
   const [currentImage, setCurrentImage] = useState(0);
 
   useEffect(() => {

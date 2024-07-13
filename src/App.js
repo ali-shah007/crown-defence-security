@@ -10,27 +10,15 @@ import SiteDetection from "./Pages/SiteDetection";
 import Services from "./Pages/Services";
 import Contact from "./Pages/Contact";
 import Brochurepage from "./Pages/Brochurepage";
-// import LoadScreen from "./Pages/LoadScreen";
 import ScrollToTop from "./components/ScrollToTop";
-
+import NotFound from './Pages/NotFound';
+import JoinOurTeam from "./Pages/JoinOurTeam";
 
 const Layout = () => {
-  // const [loading, setLoading] = useState(true);
-
-  // useEffect(() => {
-  //     // Simulate a loading delay
-  //     const timer = setTimeout(() => {
-  //         setLoading(false);
-  //     }, 3000); // 3 seconds delay
-
-  //     return () => clearTimeout(timer);
-  // }, []);
-
   return (
     <div className="app">
-      <NavBar/>
+      <NavBar />
       <ScrollToTop />
-      {/* {loading ? <LoadScreen /> : <Outlet />} */}
       <Outlet />
       <Footer />
     </div>
@@ -74,8 +62,16 @@ const router = createBrowserRouter([
         path: "/contact",
         element: <Contact />
       },
+      {
+        path: "/join-our-team",
+        element: <JoinOurTeam />
+      },
+      {
+        path: "*",
+        element: <NotFound />
+      }
     ]
-  },
+  }
 ]);
 
 function App() {
