@@ -2,6 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import logo from '../../assets/security-logo.webp'
 import logo2 from '../../assets/logo2.webp'
+import smalllogo from '../../assets/smalllogo.webp'
 
 
 
@@ -130,8 +131,9 @@ function Footer() {
     
     </div>
 
-    <div className='w-full h-[50px] bg-[#77828d] flex flex-col justify-center items-center'>
-    <h1 className=' text-white'>Copyright © 2024 Crown Defence Security Ltd</h1>
+    <div className='w-full h-[50px] bg-[#77828d] flex flex-row justify-center items-center'>
+    <h1 className=' text-white mr-3'>Copyright © 2024 Crown Defence Security Ltd </h1>
+    {/* <img src={smalllogo} alt='logo'/> */}
         {/* <h1 className='text-white'>All Rights Reserved </h1> */}
         
 

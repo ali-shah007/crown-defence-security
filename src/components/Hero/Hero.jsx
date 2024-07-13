@@ -3,12 +3,15 @@ import heroimg from '../../assets/bghero.webp';
 import cam from '../../assets/camera.webp';
 import keys from '../../assets/keys.webp';
 import vest from '../../assets/vest.webp';
+import dog from '../../assets/1 mb.png'
+import hj from '../../assets/hj.png'
+import torch from '../../assets/torchman.png'
 import classNames from 'classnames';
 import './Hero.css';
 import { Link } from 'react-scroll';
 
 function Hero() {
-  const images = [keys, cam, vest];
+  const images = [dog, cam, vest, torch];
   const [currentImage, setCurrentImage] = useState(0);
 
   useEffect(() => {
@@ -43,7 +46,7 @@ function Hero() {
           <img
             key={index}
             className={classNames(
-              'lg:w-[600px] w-full h-auto absolute bottom-0 transition-all duration-1000 ease-in-out',
+              'lg:w-[700px] w-full h-auto absolute bottom-0 transition-all duration-1000 ease-in-out',
               {
                 'opacity-0': currentImage !== index,
                 'opacity-100 animate-slideUp': currentImage === index,
