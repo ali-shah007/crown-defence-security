@@ -2,7 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import logo from '../../assets/security-logo.webp'
 import logo2 from '../../assets/logo2.webp'
-import smalllogo from '../../assets/smalllogo.webp'
+// import smalllogo from '../../assets/smalllogo.webp'
 
 
 
@@ -54,21 +54,13 @@ function Footer() {
   ]
 
   const data2 = [
-    "Bishop Auckland",
+    "England",
 
-"Shildon",
+"Wales",
 
-"Newton Aycliffe",
+"Scotland",
 
-"Darlington",
 
-"Durham",
-
-"Newcastle",
-
-"North Yorkshire",
-
-"& Surrounding Areas",
   ]
 
   const data3 = [
