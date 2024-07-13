@@ -1,17 +1,18 @@
 import React, { useState, useEffect } from 'react';
 import heroimg from '../../assets/bghero.webp';
 import cam from '../../assets/camera.webp';
-import keys from '../../assets/keys.webp';
+// import keys from '../../assets/keys.webp';
 import vest from '../../assets/vest.webp';
-import dog from '../../assets/1 mb.png'
-import hj from '../../assets/hj.png'
-import torch from '../../assets/torchman.png'
+import dog from '../../assets/1 mb.webp'
+// import hj from '../../assets/hj.png'
+import torch from '../../assets/torchman.webp'
+import dog2 from '../../assets/dog2.webp'
 import classNames from 'classnames';
 import './Hero.css';
 import { Link } from 'react-scroll';
 
 function Hero() {
-  const images = [dog, cam, vest, torch];
+  const images = [dog, cam, vest, torch, dog2];
   const [currentImage, setCurrentImage] = useState(0);
 
   useEffect(() => {
