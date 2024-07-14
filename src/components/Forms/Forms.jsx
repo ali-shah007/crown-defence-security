@@ -59,7 +59,7 @@ function Forms() {
           {popupMessage}
         </div>
       )}
-      <div className='bg-gray-900 bg-opacity-60 p-8 rounded-md shadow-md max-w-md w-full '>
+      <div className='bg-gray-900 bg-opacity-60 p-8 rounded-md shadow-md max-w-md w-full border border-white'>
         <h2 className='text-2xl font-bold mb-4 text-center text-gray-100'>Get Free Quote</h2>
         <form ref={form} onSubmit={sendEmail} className='space-y-4 opacity-80'>
           {error && (

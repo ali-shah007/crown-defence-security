@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import second from '../../assets/bghero.webp'
+import second from '../../assets/traffic.webp'
 
 function PageTopComponent({type}) {
   return (
@@ -18,7 +18,7 @@ function PageTopComponent({type}) {
         </nav>
 
         <div>
-          <h1 className='text-4xl font-bold'>{type} Us</h1>
+          <h1 className='text-4xl font-bold'>{type}</h1>
         </div>
         <div>
           <h2 className='text-2xl font-semibold'>Crown Defence Security Ltd</h2>

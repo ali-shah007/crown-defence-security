@@ -1,9 +1,12 @@
 import React from 'react';
-import bg from '../../assets/bghero.webp';
 import constructionbg from '../../assets/construction.webp'
 import monitoringbg from '../../assets/monitoring.webp'
 import trafficbg from '../../assets/traffic.webp'
 import firebg from '../../assets/fire.webp'
+import keybg from '../../assets/keys (2).webp'
+import subbg from '../../assets/subcontracting.webp'
+import carbg from '../../assets/car.webp'
+import dogbg from '../../assets/dog.webp'
 import { Link } from 'react-router-dom';
 
 function Services2() {
@@ -67,7 +70,7 @@ function Services2() {
         <div className='relative flex flex-col lg:flex-row-reverse justify-center items-center'>
           <div className='w-full lg:w-1/2 relative'>
             <img
-              src={bg}
+              src={dogbg}
               alt=''
               className='w-full lg:h-[600px] h-auto object-cover object-center filter grayscale hover:grayscale-0 transition duration-500 ease-in-out cursor-pointer'
             />
@@ -85,7 +88,7 @@ function Services2() {
         <div className='relative flex flex-col lg:flex-row justify-center items-center'>
           <div className='w-full lg:w-1/2 relative'>
             <img
-              src={bg}
+              src={carbg}
               alt='' 
               className='w-full lg:h-[600px] h-auto object-cover object-center filter grayscale hover:grayscale-0 transition duration-500 ease-in-out cursor-pointer'
             />
@@ -103,7 +106,7 @@ function Services2() {
         <div className='relative flex flex-col lg:flex-row-reverse justify-center items-center'>
           <div className='w-full lg:w-1/2 relative'>
             <img
-              src={bg}
+              src={keybg}
               alt=''
               className='w-full lg:h-[600px] h-auto object-cover object-center filter grayscale hover:grayscale-0 transition duration-500 ease-in-out cursor-pointer'
             />
@@ -140,7 +143,7 @@ function Services2() {
         <div className='relative flex flex-col lg:flex-row-reverse justify-center items-center'>
           <div className='w-full lg:w-1/2 relative'>
             <img
-              src={bg}
+              src={carbg}
               alt=''
               className='w-full lg:h-[600px] h-auto object-cover object-center filter grayscale hover:grayscale-0 transition duration-500 ease-in-out cursor-pointer'
             />
@@ -158,7 +161,7 @@ function Services2() {
         <div className='relative flex flex-col lg:flex-row justify-center items-center'>
           <div className='w-full lg:w-1/2 relative'>
             <img
-              src={bg}
+              src={subbg}
               alt=''
               className='w-full lg:h-[600px] h-auto object-cover object-center filter grayscale hover:grayscale-0 transition duration-500 ease-in-out cursor-pointer'
             />

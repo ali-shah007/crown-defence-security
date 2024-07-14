@@ -1,5 +1,6 @@
 import React from 'react';
-import services from '../assets/services.jpg';
+import PageTopComponent from '../components/PageTopComponent/PageTopComponent';
+import Services2 from '../components/Services2/Services2';
 
 
 
@@ -7,9 +8,9 @@ function Services() {
 
 
   return (
-    <div
-    className='w-full h-[100vh] bg-cover bg-center bg-fixed'
-   style={{ backgroundImage: `url(${services})` }}>
+    <div className='pt-20'>
+    <PageTopComponent type='Services'/>
+    <Services2/>
  </div>
   );
 }

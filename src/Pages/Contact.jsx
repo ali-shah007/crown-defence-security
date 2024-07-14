@@ -9,7 +9,7 @@ function Contactpage() {
 
   return (
     <div className='pt-20'>
-      <PageTopComponent type='Contact'/>
+      <PageTopComponent type='Contact Us'/>
       <Contact/>
       
  </div>
