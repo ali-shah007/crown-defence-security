@@ -12,6 +12,10 @@ const routes = [
   { url: '/', changefreq: 'daily', priority: 1.0 },
   { url: '/about', changefreq: 'weekly', priority: 0.8 },
   { url: '/contact', changefreq: 'weekly', priority: 0.8 },
+  { url: '/services', changefreq: 'weekly', priority: 0.8 },
+  { url: '/join-our-team', changefreq: 'weekly', priority: 0.8 },
+
+
   // Add more routes as needed
 ];
 
