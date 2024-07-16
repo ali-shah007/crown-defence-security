@@ -10,7 +10,7 @@ function PageTopComponent({type}) {
         
         {/* Breadcrumbs */}
         <nav className='w-full mb-4 text-sm'>
-          <ul className='flex justify-start items-center text-gray-400 space-x-2'>
+          <ul className='flex justify-start items-center text-white space-x-2'>
             <li><Link to="/" className='hover:text-white'>Home</Link></li>
             <li>{'>'}</li>
             <li>{type}</li>
@@ -21,7 +21,7 @@ function PageTopComponent({type}) {
           <h1 className='text-4xl font-bold'>{type}</h1>
         </div>
         <div>
-          <h2 className='text-2xl font-semibold'>Crown Defence Security Ltd</h2>
+          <h2 className='text-2xl font-semibold'>Crown Defence Security Ltd.</h2>
         </div>
         <div>
          <a href='tel:07460395006'><button className='text-[#333] text-xl font-semibold px-10 py-4 bg-[#FFD600] rounded-full hover:scale-105 duration-200'>

@@ -31,17 +31,17 @@ function NavBar() {
     },
     {
       title: 'About',
-      tolink: '/about',
+      tolink: '/about-crown-defence-security-uk',
       id: 2,
     },
     {
       title: 'Services',
-      tolink: '/services',
+      tolink: '/security-services-uk',
       id: 4,
     },
     {
       title: 'Contact',
-      tolink: '/contact',
+      tolink: '/contact-crown-security-uk',
       id: 5,
     },
     {
@@ -67,6 +67,7 @@ function NavBar() {
           <IoIosMail className='mx-2' />
           info@crowndefencesecurity.co.uk
         </a>
+        
       </div>
       <div
         className={`flex w-full h-[102px] bg-[#111825] justify-between ${
@@ -74,6 +75,7 @@ function NavBar() {
         } text-white z-10 backdrop-blur-3xl border-y border-white`}
       >
         <div className='lg:hidden flex justify-end items-center z-10 pl-5'>
+        
           <a
             href='tel:07460395006'
             style={{
@@ -85,6 +87,22 @@ function NavBar() {
           >
             <FaPhoneAlt className='text-2xl' />
           </a>
+          <a
+              href='mailto:info@crowndefencesecurity.co.uk'
+              style={{
+                color: 'inherit',
+                textDecoration: 'none',
+                display: 'flex',
+                alignItems: 'center',
+              }}
+            >
+              <IoIosMail className='text-4xl ml-3' />
+             
+            </a>
+          
+       
+           
+        
         </div>
         <div className='flex justify-center lg:justify-end items-center pr-5 lg:w-1/3 lg:border-r lg:border-white z-20'>
           <div className='hidden lg:flex justify-start items-center z-10 pr-5 hover:scale-105 duration-200 hover:text-brand-color'>
@@ -109,6 +127,7 @@ function NavBar() {
             />
             
           </NavLink>
+          
           
         </div>
         <div className='hidden lg:flex text-white mx-auto px-4 justify-center items-center z-20'>
@@ -138,6 +157,7 @@ function NavBar() {
           </div>
         </div>
         <div className='lg:hidden flex justify-end items-center pr-5 z-20'>
+       
           <button
             className='text-white focus:outline-none'
             onClick={toggleMenu}

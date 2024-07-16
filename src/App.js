@@ -9,6 +9,15 @@ import Contact from "./Pages/Contact";
 import ScrollToTop from "./components/ScrollToTop";
 import NotFound from './Pages/NotFound';
 import JoinOurTeam from "./Pages/JoinOurTeam";
+import Construction from './Pages/construction'
+import Firemarshal from "./Pages/Firemarshal";
+import Trafficmarshal from "./Pages/Trafficmarshal";
+import Doghandler from "./Pages/Doghandler";
+import Patrolling from './Pages/Patrolling'
+import Keyholding from './Pages/Keyholding'
+import Cctv from './Pages/Cctv'
+import Subcontracting from './Pages/Subcontracting'
+import Escort from './Pages/Escort'
 
 const Layout = () => {
   return (
@@ -31,17 +40,17 @@ const router = createBrowserRouter([
         element: <Home />
       },
       {
-        path: "/about",
+        path: "/about-crown-defence-security-uk",
         element: <About />
       },
       
       
       {
-        path: "/services",
+        path: "/security-services-uk",
         element: <Services />
       },
       {
-        path: "/contact",
+        path: "/contact-crown-security-uk",
         element: <Contact />
       },
       {
@@ -51,7 +60,44 @@ const router = createBrowserRouter([
       {
         path: "*",
         element: <NotFound />
+      },
+      {
+        path: "/construction-site-security-uk",
+        element: <Construction />
+      },
+      {
+        path: "/fire-marshal-uk",
+        element: <Firemarshal />
+      },
+      {
+        path: "/traffic-marshal-uk",
+        element: <Trafficmarshal />
+      },
+      {
+        path: "/dog-handler-security-uk",
+        element: <Doghandler />
+      },
+      {
+        path: "/patrolling-security-uk",
+        element: <Patrolling />
+      },
+      {
+        path: "/key-holding-service-uk",
+        element: <Keyholding />
+      },
+      {
+        path: "/cctv-monitoring-uk",
+        element: <Cctv />
+      },
+      {
+        path: "/escort-services-uk",
+        element: <Escort />
+      },
+      {
+        path: "/subcontracting-service-uk",
+        element: <Subcontracting />
       }
+
     ]
   }
 ]);

@@ -81,3 +81,20 @@
     }
 }
 
+/* Add this to your global CSS or create a new CSS file */
+.slide-in-left {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  
+  .slide-in-right {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  
+  .slide-in {
+    transform: translateX(0);
+    opacity: 1;
+    transition: transform 0.6s ease-in-out, opacity 0.6s ease-in-out;
+  }
+  

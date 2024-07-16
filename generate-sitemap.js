@@ -10,30 +10,40 @@ const BASE_URL = 'https://crowndefencesecurity.co.uk';
 // Define your routes
 const routes = [
   { url: '/', changefreq: 'daily', priority: 1.0 },
-  { url: '/about', changefreq: 'weekly', priority: 0.8 },
-  { url: '/contact', changefreq: 'weekly', priority: 0.8 },
-  { url: '/services', changefreq: 'weekly', priority: 0.8 },
-  { url: '/join-our-team', changefreq: 'weekly', priority: 0.8 },
-
-
+  { url: '/about-crown-defence-security-uk', changefreq: 'weekly', priority: 0.8 },
+  { url: '/contact-crown-security-uk', changefreq: 'weekly', priority: 0.8 },
+  { url: '/security-services-uk', changefreq: 'weekly', priority: 0.8 },
+  { url: '/construction-site-security-uk', changefreq: 'weekly', priority: 0.8 },
+  { url: '/fire-marshal-uk', changefreq: 'weekly', priority: 0.8 },
+  { url: '/traffic-marshal-uk', changefreq: 'weekly', priority: 0.8 },
+  { url: '/dog-handler-security-uk', changefreq: 'weekly', priority: 0.8 },
+  { url: '/patrolling-security-uk', changefreq: 'weekly', priority: 0.8 },
+  { url: '/key-holding-service-uk', changefreq: 'weekly', priority: 0.8 },
+  { url: '/cctv-monitoring-uk', changefreq: 'weekly', priority: 0.8 },
+  { url: '/escort-services-uk', changefreq: 'weekly', priority: 0.8 },
+  { url: '/subcontracting-service-uk', changefreq: 'weekly', priority: 0.8 },
   // Add more routes as needed
 ];
 
 async function generateSitemap() {
-  const sitemap = new SitemapStream({ hostname: BASE_URL });
-  const writeStream = createWriteStream(path.join(__dirname, 'public', 'sitemap.xml'));
+  try {
+    const sitemap = new SitemapStream({ hostname: BASE_URL });
+    const writeStream = createWriteStream(path.join(__dirname, 'public', 'sitemap.xml'));
 
-  sitemap.pipe(writeStream);
-  
-  routes.forEach(route => {
-    sitemap.write(route);
-  });
+    sitemap.pipe(writeStream);
 
-  sitemap.end();
-  
-  await streamToPromise(sitemap);
+    routes.forEach(route => {
+      sitemap.write(route);
+    });
 
-  console.log('Sitemap generated successfully!');
+    sitemap.end();
+
+    await streamToPromise(sitemap);
+
+    console.log('Sitemap generated successfully!');
+  } catch (error) {
+    console.error('Error generating sitemap:', error);
+  }
 }
 
 generateSitemap();

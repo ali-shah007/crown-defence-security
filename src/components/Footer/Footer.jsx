@@ -107,9 +107,8 @@ function Footer() {
       </div>
       <div>
         <h1>Company No:</h1>
-        <h1 className='text-[#c6af6b]'>1234567</h1>
-        <h1 className='mt-10 lg:mt-3'>VAT Registration No:</h1>
-        <h1 className='text-[#c6af6b]'>3333333</h1>
+        <h1 className='text-[#c6af6b]'>15762258</h1>
+        
         
 
         <div className='flex flex-col gap-10 mt-10 '>

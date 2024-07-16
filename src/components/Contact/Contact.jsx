@@ -78,13 +78,13 @@ function Contact() {
           <p>
             Phone:{' '}
             <a
-              href="tel:+441234567890"
+              href="tel:07460395006"
               className="text-yellow-600 hover:text-yellow-500"
             >
-              +44 1234 567890
+              0746 039 5006
             </a>
           </p>
-          <p>Address: 123 Security St, London, UK</p>
+          <p>Address: 277 throne road Doncaster, UK</p>
         </div>
 
         <form
