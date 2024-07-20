@@ -21,15 +21,15 @@ const ServiceSection = ({ imageSrc, title, link, description, bgColor, textColor
   return (
     <div className='w-full lg:h-[600px] h-auto'>
       <div className={`relative flex flex-col ${reverse ? 'lg:flex-row-reverse' : 'lg:flex-row'} justify-center items-center`}>
-        <div ref={ref} className={`w-full lg:w-1/2 relative ${inView ? 'slide-in' : slideDirection}`}>
+        <div ref={ref} className={`w-full lg:w-1/2 relative `}>
           <img
             src={imageSrc}
             alt=''
-            className='w-full lg:h-[600px] h-auto object-cover object-center filter grayscale hover:grayscale-0 transition duration-500 ease-in-out cursor-pointer'
+            className='w-full lg:h-[600px] h-auto object-cover object-center lg:filter lg:grayscale lg:hover:grayscale-0  cursor-pointer'
           />
           <h1 className='absolute inset-0 flex items-center justify-center text-4xl font-bold text-white z-10 pointer-events-none'>{title}</h1>
         </div>
-        <div className={`w-full lg:w-1/2 text-center ${bgColor} lg:h-[600px] h-auto flex flex-col items-center justify-center p-10 lg:px-20 lg:py-10 ${inView ? 'slide-in' : slideDirection}`}>
+        <div className={`w-full lg:w-1/2 text-center ${bgColor} lg:h-[600px] h-auto flex flex-col items-center justify-center p-10 lg:px-20 lg:py-10 `}>
           <h1 className={`text-4xl font-normal ${textColor} mb-6`}>{title}</h1>
           <p className={`${textColor === 'text-primary' ? 'text-white' : textColor} mb-6`}>{description}</p>
           <Link to={link} className={`text-[#333] bg-primary px-6 py-3 rounded-full cursor-pointer hover:scale-105 duration-200`}>Find out more</Link>
